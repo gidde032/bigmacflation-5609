@@ -32,4 +32,4 @@ Put reusable chart components and helpers under `src/lib`. Add a Svelte componen
 
 ## GitHub Pages
 
-The static build uses the production base path `/bigmacflation-5609`, outputs to `build/`, and includes a `404.html` fallback for Pages. The workflow in `.github/workflows/deploy.yml` is prepared for GitHub Pages; no deployment has been run from this setup session.
+The static build uses the production base path /bigmacflation-5609, writes the SvelteKit shell to build/index.html, and includes a 404.html fallback. The GitHub Pages workflow configures Pages, builds the site, and uploads only the build directory as the deployment artifact. In the repository’s Pages settings, set the deployment source to **GitHub Actions** so Pages serves that artifact rather than the branch README.
