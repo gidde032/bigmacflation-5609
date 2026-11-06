@@ -14,10 +14,13 @@ npm ci
 npm run dev
 npm run check
 npm run build
+npm test
 npm run preview
 ```
 
-The development server prints its local URL. `npm run preview` serves the static production build for local review.
+`npm test` builds the static site and runs the dependency-free shell contract tests. The development server prints its local URL. `npm run preview` serves the static production build for local review.
+
+Responsive CSS contract tests cover layout structure but do not replace a visual review. Check the rendered shell at 390 × 844 (portrait) and 844 × 390 (landscape) after layout changes.
 
 ## Data
 
