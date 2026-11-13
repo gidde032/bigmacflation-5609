@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import ChartPlaceholder from '$lib/components/ChartPlaceholder.svelte';
+	import InflationComparison from '$lib/components/InflationComparison.svelte';
 </script>
 
 <svelte:head>
@@ -306,12 +307,7 @@
 				</div>
 
 				<div class="chart-region" data-chart-region="inflation-comparison">
-					<ChartPlaceholder
-						ingredient="sauce"
-						overline="INFLATION COMPARISON · CHART SLOT"
-						title="Big Mac price and inflation over time"
-						description="The comparison chart and its data series will be placed here."
-					/>
+    				<InflationComparison />
 				</div>
 			</div>
 		</section>

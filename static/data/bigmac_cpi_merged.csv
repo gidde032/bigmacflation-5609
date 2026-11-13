@@ -1,0 +1,872 @@
+country,iso_a3,region,year,local_price,currency_code,cpi_index
+Australia,AUS,Asia-Pacific,2000,2.59,AUD,74.375655
+Australia,AUS,Asia-Pacific,2001,3.0,AUD,77.6534868
+Australia,AUS,Asia-Pacific,2002,3.0,AUD,79.9687807
+Australia,AUS,Asia-Pacific,2003,3.0,AUD,82.1540057
+Australia,AUS,Asia-Pacific,2004,3.25,AUD,84.0790851
+Australia,AUS,Asia-Pacific,2005,3.25,AUD,86.3423507
+Australia,AUS,Asia-Pacific,2006,3.25,AUD,89.412069
+Australia,AUS,Asia-Pacific,2007,3.45,AUD,91.4932372
+Australia,AUS,Asia-Pacific,2008,3.45,AUD,95.473465
+Australia,AUS,Asia-Pacific,2009,4.34,AUD,97.1644149
+Australia,AUS,Asia-Pacific,2010,4.35,AUD,100
+Australia,AUS,Asia-Pacific,2011,4.56,AUD,103.303848
+Australia,AUS,Asia-Pacific,2012,4.68,AUD,105.124871
+Australia,AUS,Asia-Pacific,2013,4.8675,AUD,107.700306
+Australia,AUS,Asia-Pacific,2014,5.075,AUD,110.379814
+Australia,AUS,Asia-Pacific,2015,5.3,AUD,112.044748
+Australia,AUS,Asia-Pacific,2016,5.525,AUD,113.475552
+Australia,AUS,Asia-Pacific,2017,5.85,AUD,115.686785
+Australia,AUS,Asia-Pacific,2018,5.975,AUD,117.898023
+Australia,AUS,Asia-Pacific,2019,6.125,AUD,119.79709
+Australia,AUS,Asia-Pacific,2020,6.5,AUD,120.811652
+Australia,AUS,Asia-Pacific,2021,6.515,AUD,124.271593
+Australia,AUS,Asia-Pacific,2022,6.55,AUD,132.466181
+Australia,AUS,Asia-Pacific,2023,7.35,AUD,139.880337
+Australia,AUS,Asia-Pacific,2024,7.725,AUD,144.309742
+Australia,AUS,Asia-Pacific,2025,7.875,AUD,148.457258
+Brazil,BRA,Americas,2000,2.95,BRL,52.5315827
+Brazil,BRA,Americas,2001,3.6,BRL,56.1249316
+Brazil,BRA,Americas,2002,3.6,BRL,60.8675806
+Brazil,BRA,Americas,2003,4.55,BRL,69.8241962
+Brazil,BRA,Americas,2004,5.4,BRL,74.4306277
+Brazil,BRA,Americas,2005,5.9,BRL,79.5436673
+Brazil,BRA,Americas,2006,6.3,BRL,82.8714308
+Brazil,BRA,Americas,2007,6.65,BRL,85.8890059
+Brazil,BRA,Americas,2008,7.5,BRL,90.7662937
+Brazil,BRA,Americas,2009,8.03,BRL,95.2029817
+Brazil,BRA,Americas,2010,8.455,BRL,100
+Brazil,BRA,Americas,2011,9.5,BRL,106.63645
+Brazil,BRA,Americas,2012,10.165,BRL,112.398549
+Brazil,BRA,Americas,2013,11.625,BRL,119.372104
+Brazil,BRA,Americas,2014,12.7,BRL,126.927213
+Brazil,BRA,Americas,2015,13.5,BRL,138.388615
+Brazil,BRA,Americas,2016,14.5,BRL,150.482594
+Brazil,BRA,Americas,2017,16.5,BRL,155.668786
+Brazil,BRA,Americas,2018,16.7,BRL,161.373814
+Brazil,BRA,Americas,2019,17.2,BRL,167.39786
+Brazil,BRA,Americas,2020,20.4,BRL,172.774291
+Brazil,BRA,Americas,2021,22.4,BRL,187.117425
+Brazil,BRA,Americas,2022,22.9,BRL,204.482121
+Brazil,BRA,Americas,2023,22.9,BRL,213.875135
+Brazil,BRA,Americas,2024,23.9,BRL,223.216055
+Brazil,BRA,Americas,2025,23.9,BRL,234.414253
+Britain,GBR,Europe,2000,1.9,GBP,81.4684668
+Britain,GBR,Europe,2001,1.99,GBP,82.7168485
+Britain,GBR,Europe,2002,1.99,GBP,83.9744775
+Britain,GBR,Europe,2003,1.99,GBP,85.1303865
+Britain,GBR,Europe,2004,1.88,GBP,86.3140374
+Britain,GBR,Europe,2005,1.88,GBP,88.1172554
+Britain,GBR,Europe,2006,1.91,GBP,90.2811171
+Britain,GBR,Europe,2007,1.965,GBP,92.4357315
+Britain,GBR,Europe,2008,2.29,GBP,95.6907712
+Britain,GBR,Europe,2009,2.29,GBP,97.5679674
+Britain,GBR,Europe,2010,2.29,GBP,100
+Britain,GBR,Europe,2011,2.39,GBP,103.856112
+Britain,GBR,Europe,2012,2.59,GBP,106.528574
+Britain,GBR,Europe,2013,2.69,GBP,108.969854
+Britain,GBR,Europe,2014,2.84,GBP,110.551137
+Britain,GBR,Europe,2015,2.89,GBP,110.958017
+Britain,GBR,Europe,2016,2.94,GBP,112.076937
+Britain,GBR,Europe,2017,3.14,GBP,114.943592
+Britain,GBR,Europe,2018,3.19,GBP,117.579064
+Britain,GBR,Europe,2019,3.24,GBP,119.622711
+Britain,GBR,Europe,2020,3.39,GBP,120.806362
+Britain,GBR,Europe,2021,3.39,GBP,123.848715
+Britain,GBR,Europe,2022,3.64,GBP,133.66007
+Britain,GBR,Europe,2023,3.99,GBP,142.740891
+Britain,GBR,Europe,2024,4.54,GBP,147.410764
+Britain,GBR,Europe,2025,4.84,GBP,153.134825
+Canada,CAN,Americas,2000,2.85,CAD,81.8903835
+Canada,CAN,Americas,2001,3.33,CAD,83.9582141
+Canada,CAN,Americas,2002,3.33,CAD,85.8543217
+Canada,CAN,Americas,2003,3.2,CAD,88.2226674
+Canada,CAN,Americas,2004,3.19,CAD,89.8611906
+Canada,CAN,Americas,2005,3.28,CAD,91.8503148
+Canada,CAN,Americas,2006,3.52,CAD,93.6891815
+Canada,CAN,Americas,2007,3.755,CAD,95.6926159
+Canada,CAN,Americas,2008,4.09,CAD,97.9607899
+Canada,CAN,Americas,2009,3.89,CAD,98.25415
+Canada,CAN,Americas,2010,4.145,CAD,100
+Canada,CAN,Americas,2011,4.73,CAD,102.912135
+Canada,CAN,Americas,2012,4.925,CAD,104.471952
+Canada,CAN,Americas,2013,5.47,CAD,105.452204
+Canada,CAN,Americas,2014,5.59,CAD,107.462793
+Canada,CAN,Americas,2015,5.775,CAD,108.672009
+Canada,CAN,Americas,2016,5.92,CAD,110.224671
+Canada,CAN,Americas,2017,5.975,CAD,111.984831
+Canada,CAN,Americas,2018,6.6,CAD,114.5249
+Canada,CAN,Americas,2019,6.77,CAD,116.757298
+Canada,CAN,Americas,2020,6.825,CAD,117.594448
+Canada,CAN,Americas,2021,6.77,CAD,121.587006
+Canada,CAN,Americas,2022,6.325,CAD,129.858329
+Canada,CAN,Americas,2023,6.58,CAD,134.895535
+Canada,CAN,Americas,2024,7.545,CAD,138.108185
+Canada,CAN,Americas,2025,7.655,CAD,140.970235
+Chile,CHL,Americas,2000,1260.0,CLP,73.67334
+Chile,CHL,Americas,2001,1260.0,CLP,76.3028154
+Chile,CHL,Americas,2002,1400.0,CLP,78.202295
+Chile,CHL,Americas,2003,1400.0,CLP,80.3999219
+Chile,CHL,Americas,2004,1400.0,CLP,81.24793
+Chile,CHL,Americas,2005,1500.0,CLP,83.7280834
+Chile,CHL,Americas,2006,1560.0,CLP,86.568154
+Chile,CHL,Americas,2007,1617.5,CLP,90.3839013
+Chile,CHL,Americas,2008,1550.0,CLP,98.2620047
+Chile,CHL,Americas,2009,1750.0,CLP,98.6089173
+Chile,CHL,Americas,2010,1675.0,CLP,100
+Chile,CHL,Americas,2011,1850.0,CLP,103.341223
+Chile,CHL,Americas,2012,2050.0,CLP,106.449156
+Chile,CHL,Americas,2013,2025.0,CLP,108.354123
+Chile,CHL,Americas,2014,2050.0,CLP,113.467002
+Chile,CHL,Americas,2015,2100.0,CLP,118.401424
+Chile,CHL,Americas,2016,2200.0,CLP,122.884332
+Chile,CHL,Americas,2017,2500.0,CLP,125.566548
+Chile,CHL,Americas,2018,2620.0,CLP,128.623957
+Chile,CHL,Americas,2019,2640.0,CLP,131.913576
+Chile,CHL,Americas,2020,2690.0,CLP,135.93099
+Chile,CHL,Americas,2021,2965.0,CLP,142.08128
+Chile,CHL,Americas,2022,3250.0,CLP,158.625035
+Chile,CHL,Americas,2023,3850.0,CLP,170.651469
+Chile,CHL,Americas,2024,4170.0,CLP,177.98546
+Chile,CHL,Americas,2025,4490.0,CLP,185.483881
+China,CHN,Asia-Pacific,2000,9.9,CNY,80.9700223
+China,CHN,Asia-Pacific,2001,9.9,CNY,81.5522985
+China,CHN,Asia-Pacific,2002,10.5,CNY,80.9553594
+China,CHN,Asia-Pacific,2003,9.9,CNY,81.8682148
+China,CHN,Asia-Pacific,2004,10.4,CNY,84.9993772
+China,CHN,Asia-Pacific,2005,10.5,CNY,86.5093181
+China,CHN,Asia-Pacific,2006,10.5,CNY,87.9362296
+China,CHN,Asia-Pacific,2007,11.0,CNY,92.1719135
+China,CHN,Asia-Pacific,2008,12.5,CNY,97.6333311
+China,CHN,Asia-Pacific,2009,12.5,CNY,96.9223991
+China,CHN,Asia-Pacific,2010,12.85,CNY,100
+China,CHN,Asia-Pacific,2011,14.65,CNY,105.553899
+China,CHN,Asia-Pacific,2012,15.525,CNY,108.318909
+China,CHN,Asia-Pacific,2013,16.0,CNY,111.158002
+China,CHN,Asia-Pacific,2014,16.75,CNY,113.29406
+China,CHN,Asia-Pacific,2015,17.1,CNY,114.922123
+China,CHN,Asia-Pacific,2016,18.1,CNY,117.220567
+China,CHN,Asia-Pacific,2017,19.7,CNY,119.08805
+China,CHN,Asia-Pacific,2018,20.45,CNY,121.558878
+China,CHN,Asia-Pacific,2019,20.95,CNY,125.083154
+China,CHN,Asia-Pacific,2020,21.6,CNY,128.109444
+China,CHN,Asia-Pacific,2021,22.4,CNY,129.366217
+China,CHN,Asia-Pacific,2022,24.2,CNY,131.919357
+China,CHN,Asia-Pacific,2023,24.5,CNY,132.229152
+China,CHN,Asia-Pacific,2024,25.25,CNY,132.517582
+China,CHN,Asia-Pacific,2025,25.5,CNY,132.596516
+Colombia,COL,Americas,2004,6500.0,COP,75.8405668
+Colombia,COL,Americas,2005,6500.0,COP,79.6712887
+Colombia,COL,Americas,2006,6500.0,COP,83.0919147
+Colombia,COL,Americas,2007,6900.0,COP,87.6988502
+Colombia,COL,Americas,2008,7000.0,COP,93.8350379
+Colombia,COL,Americas,2009,7000.0,COP,97.7784709
+Colombia,COL,Americas,2010,8200.0,COP,100
+Colombia,COL,Americas,2011,8400.0,COP,103.415033
+Colombia,COL,Americas,2012,8500.0,COP,106.692568
+Colombia,COL,Americas,2013,8600.0,COP,108.844549
+Colombia,COL,Americas,2014,8600.0,COP,111.999776
+Colombia,COL,Americas,2015,7900.0,COP,117.588376
+Colombia,COL,Americas,2016,8400.0,COP,126.423331
+Colombia,COL,Americas,2017,9900.0,COP,131.87763
+Colombia,COL,Americas,2018,11400.0,COP,136.151216
+Colombia,COL,Americas,2019,11900.0,COP,140.94785
+Colombia,COL,Americas,2020,11900.0,COP,144.509087
+Colombia,COL,Americas,2021,12950.0,COP,149.559763
+Colombia,COL,Americas,2022,13950.0,COP,164.780806
+Colombia,COL,Americas,2023,18900.0,COP,184.119324
+Colombia,COL,Americas,2024,19900.0,COP,196.287929
+Colombia,COL,Americas,2025,22400.0,COP,206.381504
+Costa Rica,CRI,Americas,2004,1130.0,CRC,55.7746595
+Costa Rica,CRI,Americas,2005,1130.0,CRC,63.4706116
+Costa Rica,CRI,Americas,2006,1130.0,CRC,70.7510695
+Costa Rica,CRI,Americas,2007,1130.0,CRC,77.3714201
+Costa Rica,CRI,Americas,2008,1800.0,CRC,87.7581182
+Costa Rica,CRI,Americas,2009,2000.0,CRC,94.6407256
+Costa Rica,CRI,Americas,2010,2025.0,CRC,100
+Costa Rica,CRI,Americas,2011,2050.0,CRC,104.877998
+Costa Rica,CRI,Americas,2012,2050.0,CRC,109.59274
+Costa Rica,CRI,Americas,2013,2175.0,CRC,115.325904
+Costa Rica,CRI,Americas,2014,2150.0,CRC,120.537714
+Costa Rica,CRI,Americas,2015,2150.0,CRC,121.504404
+Costa Rica,CRI,Americas,2016,2200.0,CRC,121.483167
+Costa Rica,CRI,Americas,2017,2270.0,CRC,123.45837
+Costa Rica,CRI,Americas,2018,2290.0,CRC,126.200522
+Costa Rica,CRI,Americas,2019,2290.0,CRC,128.845743
+Costa Rica,CRI,Americas,2020,2350.0,CRC,129.779761
+Costa Rica,CRI,Americas,2021,2360.0,CRC,132.020379
+Costa Rica,CRI,Americas,2022,2650.0,CRC,142.944769
+Costa Rica,CRI,Americas,2023,2875.0,CRC,143.695505
+Costa Rica,CRI,Americas,2024,2950.0,CRC,143.102254
+Costa Rica,CRI,Americas,2025,2990.0,CRC,142.996829
+Czech Republic,CZE,Europe,2000,54.37,CZK,77.8175954
+Czech Republic,CZE,Europe,2001,56.0,CZK,81.4459774
+Czech Republic,CZE,Europe,2002,56.28,CZK,82.9958789
+Czech Republic,CZE,Europe,2003,56.57,CZK,83.0944275
+Czech Republic,CZE,Europe,2004,56.42,CZK,85.3879233
+Czech Republic,CZE,Europe,2005,56.42,CZK,86.9736606
+Czech Republic,CZE,Europe,2006,60.525,CZK,89.1775667
+Czech Republic,CZE,Europe,2007,52.5,CZK,91.7219136
+Czech Republic,CZE,Europe,2008,66.08,CZK,97.5542018
+Czech Republic,CZE,Europe,2009,67.92,CZK,98.5486472
+Czech Republic,CZE,Europe,2010,67.64,CZK,100
+Czech Republic,CZE,Europe,2011,69.32,CZK,101.917219
+Czech Republic,CZE,Europe,2012,70.275,CZK,105.267873
+Czech Republic,CZE,Europe,2013,70.39,CZK,106.781939
+Czech Republic,CZE,Europe,2014,70.45,CZK,107.149256
+Czech Republic,CZE,Europe,2015,70.225,CZK,107.480738
+Czech Republic,CZE,Europe,2016,75.0,CZK,108.215374
+Czech Republic,CZE,Europe,2017,75.0,CZK,110.867228
+Czech Republic,CZE,Europe,2018,77.0,CZK,113.250314
+Czech Republic,CZE,Europe,2019,85.0,CZK,116.475542
+Czech Republic,CZE,Europe,2020,87.0,CZK,120.157678
+Czech Republic,CZE,Europe,2021,89.0,CZK,124.771546
+Czech Republic,CZE,Europe,2022,92.0,CZK,143.612256
+Czech Republic,CZE,Europe,2023,102.0,CZK,158.923132
+Czech Republic,CZE,Europe,2024,107.0,CZK,162.793406
+Czech Republic,CZE,Europe,2025,109.0,CZK,166.798065
+Denmark,DNK,Europe,2000,24.75,DKK,81.6390515
+Denmark,DNK,Europe,2001,24.75,DKK,83.5858804
+Denmark,DNK,Europe,2002,24.75,DKK,85.6210281
+Denmark,DNK,Europe,2003,27.75,DKK,87.4000259
+Denmark,DNK,Europe,2004,27.75,DKK,88.419221
+Denmark,DNK,Europe,2005,27.75,DKK,90.0188059
+Denmark,DNK,Europe,2006,27.75,DKK,91.7221478
+Denmark,DNK,Europe,2007,27.75,DKK,93.2925511
+Denmark,DNK,Europe,2008,28.0,DKK,96.4733475
+Denmark,DNK,Europe,2009,29.5,DKK,97.7476114
+Denmark,DNK,Europe,2010,29.72,DKK,100
+Denmark,DNK,Europe,2011,28.5,DKK,102.750638
+Denmark,DNK,Europe,2012,30.0,DKK,105.232156
+Denmark,DNK,Europe,2013,28.5,DKK,106.050322
+Denmark,DNK,Europe,2014,28.5,DKK,106.638278
+Denmark,DNK,Europe,2015,34.545,DKK,107.134365
+Denmark,DNK,Europe,2016,30.0,DKK,107.409969
+Denmark,DNK,Europe,2017,30.0,DKK,108.631274
+Denmark,DNK,Europe,2018,30.0,DKK,109.527258
+Denmark,DNK,Europe,2019,30.0,DKK,110.337858
+Denmark,DNK,Europe,2020,30.0,DKK,110.804764
+Denmark,DNK,Europe,2021,30.0,DKK,112.843154
+Denmark,DNK,Europe,2022,32.0,DKK,121.532791
+Denmark,DNK,Europe,2023,37.6,DKK,125.557693
+Denmark,DNK,Europe,2024,39.0,DKK,127.290217
+Denmark,DNK,Europe,2025,42.0,DKK,129.696079
+Egypt,EGY,Middle East & Africa,2003,8.0,EGP,49.4968351
+Egypt,EGY,Middle East & Africa,2004,10.0,EGP,55.075435
+Egypt,EGY,Middle East & Africa,2005,9.0,EGP,57.7572765
+Egypt,EGY,Middle East & Africa,2006,9.375,EGP,62.1725468
+Egypt,EGY,Middle East & Africa,2007,9.315,EGP,67.9663872
+Egypt,EGY,Middle East & Africa,2008,13.0,EGP,80.415676
+Egypt,EGY,Middle East & Africa,2009,13.0,EGP,89.8753703
+Egypt,EGY,Middle East & Africa,2010,13.0,EGP,100
+Egypt,EGY,Middle East & Africa,2011,14.09,EGP,110.064926
+Egypt,EGY,Middle East & Africa,2012,15.75,EGP,117.892446
+Egypt,EGY,Middle East & Africa,2013,16.375,EGP,129.05653
+Egypt,EGY,Middle East & Africa,2014,16.93,EGP,142.052801
+Egypt,EGY,Middle East & Africa,2015,16.93,EGP,156.784373
+Egypt,EGY,Middle East & Africa,2016,19.965,EGP,178.441948
+Egypt,EGY,Middle East & Africa,2017,29.43,EGP,231.094115
+Egypt,EGY,Middle East & Africa,2018,32.79,EGP,264.375055
+Egypt,EGY,Middle East & Africa,2019,41.0,EGP,288.572774
+Egypt,EGY,Middle East & Africa,2020,42.0,EGP,303.131077
+Egypt,EGY,Middle East & Africa,2021,42.5,EGP,318.936481
+Egypt,EGY,Middle East & Africa,2022,44.25,EGP,363.254813
+Egypt,EGY,Middle East & Africa,2023,68.0,EGP,486.342894
+Egypt,EGY,Middle East & Africa,2024,102.5,EGP,623.8349
+Egypt,EGY,Middle East & Africa,2025,130.0,EGP,711.63039
+Hong Kong,HKG,Asia-Pacific,2000,10.2,HKD,95.8964075
+Hong Kong,HKG,Asia-Pacific,2001,10.7,HKD,94.3062885
+Hong Kong,HKG,Asia-Pacific,2002,11.2,HKD,91.4930011
+Hong Kong,HKG,Asia-Pacific,2003,11.5,HKD,89.0466641
+Hong Kong,HKG,Asia-Pacific,2004,12.0,HKD,88.8020304
+Hong Kong,HKG,Asia-Pacific,2005,12.0,HKD,89.5359315
+Hong Kong,HKG,Asia-Pacific,2006,12.0,HKD,91.3268754
+Hong Kong,HKG,Asia-Pacific,2007,12.0,HKD,93.1854021
+Hong Kong,HKG,Asia-Pacific,2008,13.3,HKD,97.1953143
+Hong Kong,HKG,Asia-Pacific,2009,13.3,HKD,97.7585042
+Hong Kong,HKG,Asia-Pacific,2010,14.8,HKD,100
+Hong Kong,HKG,Asia-Pacific,2011,15.1,HKD,105.305249
+Hong Kong,HKG,Asia-Pacific,2012,16.5,HKD,109.574228
+Hong Kong,HKG,Asia-Pacific,2013,17.0,HKD,114.327551
+Hong Kong,HKG,Asia-Pacific,2014,18.4,HKD,119.384997
+Hong Kong,HKG,Asia-Pacific,2015,19.0,HKD,122.955621
+Hong Kong,HKG,Asia-Pacific,2016,19.2,HKD,125.918
+Hong Kong,HKG,Asia-Pacific,2017,19.2,HKD,127.799054
+Hong Kong,HKG,Asia-Pacific,2018,20.25,HKD,130.874071
+Hong Kong,HKG,Asia-Pacific,2019,20.25,HKD,134.647443
+Hong Kong,HKG,Asia-Pacific,2020,20.5,HKD,134.985357
+Hong Kong,HKG,Asia-Pacific,2021,20.75,HKD,137.102951
+Hong Kong,HKG,Asia-Pacific,2022,21.5,HKD,139.682361
+Hong Kong,HKG,Asia-Pacific,2023,22.0,HKD,142.610948
+Hong Kong,HKG,Asia-Pacific,2024,23.0,HKD,145.07772
+Hong Kong,HKG,Asia-Pacific,2025,24.5,HKD,147.161523
+Hungary,HUN,Europe,2000,339.0,HUF,57.8788295
+Hungary,HUN,Europe,2001,399.0,HUF,63.1680176
+Hungary,HUN,Europe,2002,459.0,HUF,66.4720429
+Hungary,HUN,Europe,2003,490.0,HUF,69.5699959
+Hungary,HUN,Europe,2004,530.0,HUF,74.2615744
+Hungary,HUN,Europe,2005,530.0,HUF,76.9061684
+Hungary,HUN,Europe,2006,560.0,HUF,79.9216925
+Hungary,HUN,Europe,2007,595.0,HUF,86.2824564
+Hungary,HUN,Europe,2008,670.0,HUF,91.4960846
+Hungary,HUN,Europe,2009,720.0,HUF,95.3496359
+Hungary,HUN,Europe,2010,730.0,HUF,100
+Hungary,HUN,Europe,2011,760.0,HUF,103.908504
+Hungary,HUN,Europe,2012,737.5,HUF,109.795302
+Hungary,HUN,Europe,2013,845.0,HUF,111.691166
+Hungary,HUN,Europe,2014,860.0,HUF,111.437011
+Hungary,HUN,Europe,2015,880.0,HUF,111.36832
+Hungary,HUN,Europe,2016,900.0,HUF,111.801072
+Hungary,HUN,Europe,2017,881.0,HUF,114.425058
+Hungary,HUN,Europe,2018,857.0,HUF,117.687869
+Hungary,HUN,Europe,2019,875.0,HUF,121.61698
+Hungary,HUN,Europe,2020,900.0,HUF,125.662866
+Hungary,HUN,Europe,2021,904.0,HUF,132.085451
+Hungary,HUN,Europe,2022,1006.0,HUF,151.380684
+Hungary,HUN,Europe,2023,1375.0,HUF,177.304575
+Hungary,HUN,Europe,2024,1410.0,HUF,183.871411
+Hungary,HUN,Europe,2025,1480.0,HUF,191.983789
+Indonesia,IDN,Asia-Pacific,2000,14500.0,IDR,44.0160374
+Indonesia,IDN,Asia-Pacific,2001,14700.0,IDR,49.0779328
+Indonesia,IDN,Asia-Pacific,2002,16000.0,IDR,54.9182657
+Indonesia,IDN,Asia-Pacific,2003,16100.0,IDR,58.6292646
+Indonesia,IDN,Asia-Pacific,2004,16100.0,IDR,62.1845795
+Indonesia,IDN,Asia-Pacific,2005,14600.0,IDR,68.6848581
+Indonesia,IDN,Asia-Pacific,2006,14600.0,IDR,77.6885301
+Indonesia,IDN,Asia-Pacific,2007,15900.0,IDR,82.6656931
+Indonesia,IDN,Asia-Pacific,2008,18700.0,IDR,91.1196377
+Indonesia,IDN,Asia-Pacific,2009,20900.0,IDR,95.1165215
+Indonesia,IDN,Asia-Pacific,2010,21840.0,IDR,100
+Indonesia,IDN,Asia-Pacific,2011,22534.0,IDR,105.356048
+Indonesia,IDN,Asia-Pacific,2012,23367.0,IDR,109.864776
+Indonesia,IDN,Asia-Pacific,2013,27939.0,IDR,116.909848
+Indonesia,IDN,Asia-Pacific,2014,27939.0,IDR,124.38615
+Indonesia,IDN,Asia-Pacific,2015,29219.5,IDR,132.300991
+Indonesia,IDN,Asia-Pacific,2016,30750.0,IDR,136.965665
+Indonesia,IDN,Asia-Pacific,2017,31563.0,IDR,142.182411
+Indonesia,IDN,Asia-Pacific,2018,33625.0,IDR,146.729899
+Indonesia,IDN,Asia-Pacific,2019,32500.0,IDR,151.176673
+Indonesia,IDN,Asia-Pacific,2020,33500.0,IDR,154.079016
+Indonesia,IDN,Asia-Pacific,2021,34000.0,IDR,156.48277
+Indonesia,IDN,Asia-Pacific,2022,34500.0,IDR,163.069857
+Indonesia,IDN,Asia-Pacific,2023,36500.0,IDR,169.05352
+Indonesia,IDN,Asia-Pacific,2024,39000.0,IDR,172.741444
+Indonesia,IDN,Asia-Pacific,2025,41500.0,IDR,176.046566
+Japan,JPN,Asia-Pacific,2000,294.0,JPY,102.667615
+Japan,JPN,Asia-Pacific,2001,294.0,JPY,101.907818
+Japan,JPN,Asia-Pacific,2002,262.0,JPY,100.966705
+Japan,JPN,Asia-Pacific,2003,262.0,JPY,100.707683
+Japan,JPN,Asia-Pacific,2004,262.0,JPY,100.699049
+Japan,JPN,Asia-Pacific,2005,250.0,JPY,100.414125
+Japan,JPN,Asia-Pacific,2006,250.0,JPY,100.664513
+Japan,JPN,Asia-Pacific,2007,280.0,JPY,100.724951
+Japan,JPN,Asia-Pacific,2008,280.0,JPY,102.115035
+Japan,JPN,Asia-Pacific,2009,320.0,JPY,100.733585
+Japan,JPN,Asia-Pacific,2010,320.0,JPY,100
+Japan,JPN,Asia-Pacific,2011,320.0,JPY,99.7275444
+Japan,JPN,Asia-Pacific,2012,320.0,JPY,99.6835999
+Japan,JPN,Asia-Pacific,2013,320.0,JPY,100.017578
+Japan,JPN,Asia-Pacific,2014,340.0,JPY,102.77729
+Japan,JPN,Asia-Pacific,2015,370.0,JPY,103.594656
+Japan,JPN,Asia-Pacific,2016,370.0,JPY,103.462823
+Japan,JPN,Asia-Pacific,2017,380.0,JPY,103.96379
+Japan,JPN,Asia-Pacific,2018,385.0,JPY,104.99209
+Japan,JPN,Asia-Pacific,2019,390.0,JPY,105.484268
+Japan,JPN,Asia-Pacific,2020,390.0,JPY,105.457901
+Japan,JPN,Asia-Pacific,2021,390.0,JPY,105.211812
+Japan,JPN,Asia-Pacific,2022,390.0,JPY,107.839691
+Japan,JPN,Asia-Pacific,2023,430.0,JPY,111.364036
+Japan,JPN,Asia-Pacific,2024,465.0,JPY,114.413781
+Japan,JPN,Asia-Pacific,2025,480.0,JPY,118.043593
+Malaysia,MYS,Asia-Pacific,2000,4.52,MYR,80.5192719
+Malaysia,MYS,Asia-Pacific,2001,4.52,MYR,81.6600567
+Malaysia,MYS,Asia-Pacific,2002,5.04,MYR,83.1363663
+Malaysia,MYS,Asia-Pacific,2003,5.04,MYR,84.0422836
+Malaysia,MYS,Asia-Pacific,2004,5.04,MYR,85.2367524
+Malaysia,MYS,Asia-Pacific,2005,5.25,MYR,87.7726062
+Malaysia,MYS,Asia-Pacific,2006,5.5,MYR,90.9405264
+Malaysia,MYS,Asia-Pacific,2007,5.5,MYR,92.7842121
+Malaysia,MYS,Asia-Pacific,2008,5.5,MYR,97.832399
+Malaysia,MYS,Asia-Pacific,2009,6.77,MYR,98.4030636
+Malaysia,MYS,Asia-Pacific,2010,7.05,MYR,100
+Malaysia,MYS,Asia-Pacific,2011,7.2,MYR,103.174471
+Malaysia,MYS,Asia-Pacific,2012,7.375,MYR,104.890852
+Malaysia,MYS,Asia-Pacific,2013,7.625,MYR,107.098817
+Malaysia,MYS,Asia-Pacific,2014,7.515,MYR,110.464923
+Malaysia,MYS,Asia-Pacific,2015,7.64,MYR,112.789535
+Malaysia,MYS,Asia-Pacific,2016,8.0,MYR,115.147475
+Malaysia,MYS,Asia-Pacific,2017,8.3,MYR,119.605066
+Malaysia,MYS,Asia-Pacific,2018,8.725,MYR,120.663223
+Malaysia,MYS,Asia-Pacific,2019,8.95,MYR,121.463089
+Malaysia,MYS,Asia-Pacific,2020,9.745,MYR,120.079987
+Malaysia,MYS,Asia-Pacific,2021,9.99,MYR,123.054491
+Malaysia,MYS,Asia-Pacific,2022,10.445,MYR,127.212131
+Malaysia,MYS,Asia-Pacific,2023,13.025,MYR,130.37827
+Malaysia,MYS,Asia-Pacific,2024,13.15,MYR,132.769538
+Malaysia,MYS,Asia-Pacific,2025,13.35,MYR,134.602566
+Mexico,MEX,Americas,2000,20.9,MXN,63.3128119
+Mexico,MEX,Americas,2001,21.9,MXN,67.3444059
+Mexico,MEX,Americas,2002,21.9,MXN,70.7323194
+Mexico,MEX,Americas,2003,23.0,MXN,73.9484473
+Mexico,MEX,Americas,2004,24.0,MXN,77.4154528
+Mexico,MEX,Americas,2005,28.0,MXN,80.5028253
+Mexico,MEX,Americas,2006,28.5,MXN,83.4246493
+Mexico,MEX,Americas,2007,29.0,MXN,86.7339792
+Mexico,MEX,Americas,2008,32.0,MXN,91.1790807
+Mexico,MEX,Americas,2009,33.0,MXN,96.0091611
+Mexico,MEX,Americas,2010,32.0,MXN,100
+Mexico,MEX,Americas,2011,32.0,MXN,103.407378
+Mexico,MEX,Americas,2012,37.0,MXN,107.658983
+Mexico,MEX,Americas,2013,37.0,MXN,111.756904
+Mexico,MEX,Americas,2014,39.5,MXN,116.247985
+Mexico,MEX,Americas,2015,49.0,MXN,119.410675
+Mexico,MEX,Americas,2016,46.5,MXN,122.780096
+Mexico,MEX,Americas,2017,49.0,MXN,130.197802
+Mexico,MEX,Americas,2018,48.5,MXN,136.576649
+Mexico,MEX,Americas,2019,49.5,MXN,141.542523
+Mexico,MEX,Americas,2020,50.0,MXN,146.350488
+Mexico,MEX,Americas,2021,59.0,MXN,154.676672
+Mexico,MEX,Americas,2022,69.5,MXN,166.890369
+Mexico,MEX,Americas,2023,84.0,MXN,176.116004
+Mexico,MEX,Americas,2024,92.0,MXN,184.432652
+Mexico,MEX,Americas,2025,97.0,MXN,191.45876
+New Zealand,NZL,Asia-Pacific,2000,3.4,NZD,76.9981373
+New Zealand,NZL,Asia-Pacific,2001,3.6,NZD,79.0199669
+New Zealand,NZL,Asia-Pacific,2002,3.6,NZD,81.1354046
+New Zealand,NZL,Asia-Pacific,2003,3.95,NZD,82.5581743
+New Zealand,NZL,Asia-Pacific,2004,4.35,NZD,84.4489621
+New Zealand,NZL,Asia-Pacific,2005,4.45,NZD,87.0136968
+New Zealand,NZL,Asia-Pacific,2006,4.45,NZD,89.9420574
+New Zealand,NZL,Asia-Pacific,2007,4.6,NZD,92.0792094
+New Zealand,NZL,Asia-Pacific,2008,4.9,NZD,95.7245787
+New Zealand,NZL,Asia-Pacific,2009,4.9,NZD,97.7497768
+New Zealand,NZL,Asia-Pacific,2010,4.95,NZD,100
+New Zealand,NZL,Asia-Pacific,2011,5.1,NZD,104.027907
+New Zealand,NZL,Asia-Pacific,2012,5.1,NZD,105.130512
+New Zealand,NZL,Asia-Pacific,2013,5.35,NZD,106.323137
+New Zealand,NZL,Asia-Pacific,2014,5.6,NZD,107.628261
+New Zealand,NZL,Asia-Pacific,2015,5.9,NZD,107.943294
+New Zealand,NZL,Asia-Pacific,2016,5.95,NZD,108.640867
+New Zealand,NZL,Asia-Pacific,2017,6.05,NZD,110.651579
+New Zealand,NZL,Asia-Pacific,2018,6.2,NZD,112.42012
+New Zealand,NZL,Asia-Pacific,2019,6.3,NZD,114.240912
+New Zealand,NZL,Asia-Pacific,2020,6.55,NZD,116.199643
+New Zealand,NZL,Asia-Pacific,2021,6.85,NZD,120.779211
+New Zealand,NZL,Asia-Pacific,2022,7.05,NZD,129.441767
+New Zealand,NZL,Asia-Pacific,2023,7.8,NZD,136.862874
+New Zealand,NZL,Asia-Pacific,2024,8.3,NZD,140.8631
+New Zealand,NZL,Asia-Pacific,2025,8.5,NZD,144.863325
+Norway,NOR,Europe,2002,35.0,NOK,85.4899028
+Norway,NOR,Europe,2004,35.5,NOK,88.0329095
+Norway,NOR,Europe,2005,39.0,NOK,89.3667415
+Norway,NOR,Europe,2006,43.0,NOK,91.4235851
+Norway,NOR,Europe,2007,40.75,NOK,92.1216654
+Norway,NOR,Europe,2008,40.0,NOK,95.5746697
+Norway,NOR,Europe,2009,40.0,NOK,97.6439791
+Norway,NOR,Europe,2010,42.5,NOK,100
+Norway,NOR,Europe,2011,45.0,NOK,101.308901
+Norway,NOR,Europe,2012,42.0,NOK,102.006981
+Norway,NOR,Europe,2013,44.5,NOK,104.176016
+Norway,NOR,Europe,2014,48.0,NOK,106.32012
+Norway,NOR,Europe,2015,47.0,NOK,108.613812
+Norway,NOR,Europe,2016,46.8,NOK,112.465719
+Norway,NOR,Europe,2017,49.0,NOK,114.609823
+Norway,NOR,Europe,2018,45.5,NOK,117.751184
+Norway,NOR,Europe,2019,46.0,NOK,120.306657
+Norway,NOR,Europe,2020,52.5,NOK,121.864872
+Norway,NOR,Europe,2021,54.5,NOK,126.09075
+Norway,NOR,Europe,2022,59.5,NOK,133.37073
+Norway,NOR,Europe,2023,67.5,NOK,140.700573
+Norway,NOR,Europe,2024,74.5,NOK,145.175767
+Norway,NOR,Europe,2025,75.0,NOK,149.588631
+Pakistan,PAK,Asia-Pacific,2004,110.0,PKR,51.1432279
+Pakistan,PAK,Asia-Pacific,2005,130.0,PKR,55.778506
+Pakistan,PAK,Asia-Pacific,2006,130.0,PKR,60.1967686
+Pakistan,PAK,Asia-Pacific,2007,140.0,PKR,64.7709311
+Pakistan,PAK,Asia-Pacific,2008,140.0,PKR,77.9104406
+Pakistan,PAK,Asia-Pacific,2009,190.0,PKR,88.5434744
+Pakistan,PAK,Asia-Pacific,2010,205.0,PKR,100
+Pakistan,PAK,Asia-Pacific,2011,205.13,PKR,111.916093
+Pakistan,PAK,Asia-Pacific,2012,272.5,PKR,122.752203
+Pakistan,PAK,Asia-Pacific,2013,295.0,PKR,132.194494
+Pakistan,PAK,Asia-Pacific,2014,310.0,PKR,141.698463
+Pakistan,PAK,Asia-Pacific,2015,325.0,PKR,145.282483
+Pakistan,PAK,Asia-Pacific,2016,337.5,PKR,150.752541
+Pakistan,PAK,Asia-Pacific,2017,375.0,PKR,156.911346
+Pakistan,PAK,Asia-Pacific,2018,375.0,PKR,164.879394
+Pakistan,PAK,Asia-Pacific,2019,470.0,PKR,182.320387
+Pakistan,PAK,Asia-Pacific,2020,535.0,PKR,200.078604
+Pakistan,PAK,Asia-Pacific,2021,565.0,PKR,219.0789
+Pakistan,PAK,Asia-Pacific,2022,645.0,PKR,262.618334
+Pakistan,PAK,Asia-Pacific,2023,882.5,PKR,343.421079
+Pakistan,PAK,Asia-Pacific,2024,1065.0,PKR,386.803857
+Pakistan,PAK,Asia-Pacific,2025,1065.0,PKR,400.518189
+Peru,PER,Americas,2002,8.5,PEN,80.882874
+Peru,PER,Americas,2003,7.9,PEN,82.7103235
+Peru,PER,Americas,2004,8.99,PEN,85.739567
+Peru,PER,Americas,2005,8.99,PEN,87.1253772
+Peru,PER,Americas,2006,9.5,PEN,88.8698521
+Peru,PER,Americas,2007,9.5,PEN,90.4517234
+Peru,PER,Americas,2008,9.5,PEN,95.6851479
+Peru,PER,Americas,2009,8.056,PEN,98.4946854
+Peru,PER,Americas,2010,9.028,PEN,100
+Peru,PER,Americas,2011,10.0,PEN,103.369311
+Peru,PER,Americas,2012,10.0,PEN,107.102197
+Peru,PER,Americas,2013,10.0,PEN,110.066675
+Peru,PER,Americas,2014,10.0,PEN,113.82209
+Peru,PER,Americas,2015,10.0,PEN,117.68987
+Peru,PER,Americas,2016,10.0,PEN,121.876306
+Peru,PER,Americas,2017,10.75,PEN,125.52638
+Peru,PER,Americas,2018,10.5,PEN,127.420767
+Peru,PER,Americas,2019,10.5,PEN,130.290438
+Peru,PER,Americas,2020,11.9,PEN,132.899389
+Peru,PER,Americas,2021,12.4,PEN,138.576404
+Peru,PER,Americas,2022,13.4,PEN,150.124955
+Peru,PER,Americas,2023,14.4,PEN,159.816442
+Peru,PER,Americas,2024,16.4,PEN,163.025088
+Peru,PER,Americas,2025,16.9,PEN,165.521417
+Philippines,PHL,Asia-Pacific,2001,59.0,PHP,67.0539419
+Philippines,PHL,Asia-Pacific,2002,65.0,PHP,68.879668
+Philippines,PHL,Asia-Pacific,2003,65.0,PHP,70.4564315
+Philippines,PHL,Asia-Pacific,2004,69.0,PHP,73.8589212
+Philippines,PHL,Asia-Pacific,2005,80.0,PHP,78.6721992
+Philippines,PHL,Asia-Pacific,2006,83.5,PHP,82.9875519
+Philippines,PHL,Asia-Pacific,2007,85.0,PHP,85.3941909
+Philippines,PHL,Asia-Pacific,2008,87.0,PHP,92.4481328
+Philippines,PHL,Asia-Pacific,2009,99.39,PHP,96.3485477
+Philippines,PHL,Asia-Pacific,2010,101.76,PHP,100
+Philippines,PHL,Asia-Pacific,2011,118.0,PHP,104.718417
+Philippines,PHL,Asia-Pacific,2012,118.0,PHP,107.888206
+Philippines,PHL,Asia-Pacific,2013,116.605,PHP,110.674621
+Philippines,PHL,Asia-Pacific,2014,147.5,PHP,114.656499
+Philippines,PHL,Asia-Pacific,2015,163.0,PHP,115.429504
+Philippines,PHL,Asia-Pacific,2016,132.0,PHP,116.876642
+Philippines,PHL,Asia-Pacific,2017,133.5,PHP,120.211352
+Philippines,PHL,Asia-Pacific,2018,137.0,PHP,126.59379
+Philippines,PHL,Asia-Pacific,2019,141.0,PHP,129.621996
+Philippines,PHL,Asia-Pacific,2020,142.0,PHP,132.724061
+Philippines,PHL,Asia-Pacific,2021,142.0,PHP,137.936374
+Philippines,PHL,Asia-Pacific,2022,148.5,PHP,145.965868
+Philippines,PHL,Asia-Pacific,2023,155.0,PHP,154.691745
+Philippines,PHL,Asia-Pacific,2024,164.0,PHP,159.661379
+Philippines,PHL,Asia-Pacific,2025,169.0,PHP,162.309741
+Poland,POL,Europe,2000,5.5,PLN,76.047606
+Poland,POL,Europe,2001,5.9,PLN,80.1605156
+Poland,POL,Europe,2002,5.9,PLN,81.6877996
+Poland,POL,Europe,2003,6.3,PLN,82.2454834
+Poland,POL,Europe,2004,6.3,PLN,85.0275576
+Poland,POL,Europe,2005,6.5,PLN,86.8843883
+Poland,POL,Europe,2006,6.5,PLN,88.0005868
+Poland,POL,Europe,2007,6.9,PLN,90.1642951
+Poland,POL,Europe,2008,7.0,PLN,93.9196127
+Poland,POL,Europe,2009,7.6,PLN,97.4842306
+Poland,POL,Europe,2010,8.2,PLN,100
+Poland,POL,Europe,2011,8.63,PLN,104.239401
+Poland,POL,Europe,2012,9.1,PLN,107.950711
+Poland,POL,Europe,2013,9.15,PLN,109.021564
+Poland,POL,Europe,2014,9.2,PLN,109.080241
+Poland,POL,Europe,2015,9.4,PLN,108.126742
+Poland,POL,Europe,2016,9.6,PLN,107.407951
+Poland,POL,Europe,2017,9.85,PLN,109.637671
+Poland,POL,Europe,2018,10.1,PLN,111.625348
+Poland,POL,Europe,2019,10.65,PLN,114.111779
+Poland,POL,Europe,2020,11.0,PLN,117.962447
+Poland,POL,Europe,2021,13.255,PLN,123.92548
+Poland,POL,Europe,2022,15.38,PLN,141.807247
+Poland,POL,Europe,2023,18.825,PLN,158.15608
+Poland,POL,Europe,2024,20.4,PLN,164.151159
+Poland,POL,Europe,2025,21.1,PLN,170.412205
+Russia,RUS,Europe,2000,39.5,RUB,30.7595537
+Russia,RUS,Europe,2001,35.0,RUB,37.3657852
+Russia,RUS,Europe,2002,39.0,RUB,43.2653684
+Russia,RUS,Europe,2003,41.0,RUB,49.1768425
+Russia,RUS,Europe,2004,42.0,RUB,54.5315199
+Russia,RUS,Europe,2005,42.0,RUB,61.449009
+Russia,RUS,Europe,2006,47.0,RUB,67.3903014
+Russia,RUS,Europe,2007,50.5,RUB,73.4603471
+Russia,RUS,Europe,2008,59.0,RUB,83.8261661
+Russia,RUS,Europe,2009,67.0,RUB,93.5896759
+Russia,RUS,Europe,2010,70.5,RUB,100
+Russia,RUS,Europe,2011,75.0,RUB,108.440465
+Russia,RUS,Europe,2012,78.0,RUB,113.94354
+Russia,RUS,Europe,2013,79.94,RUB,121.640048
+Russia,RUS,Europe,2014,89.0,RUB,131.152506
+Russia,RUS,Europe,2015,98.0,RUB,151.526256
+Russia,RUS,Europe,2016,122.0,RUB,162.197397
+Russia,RUS,Europe,2017,133.5,RUB,168.171664
+Russia,RUS,Europe,2018,130.0,RUB,173.012172
+Russia,RUS,Europe,2019,120.085,RUB,180.749322
+Russia,RUS,Europe,2020,135.0,RUB,186.862622
+Russia,RUS,Europe,2021,135.0,RUB,199.372063
+Russia,RUS,Europe,2022,135.0,RUB,226.773121
+Saudi Arabia,SAU,Middle East & Africa,2004,2.4,SAR,76.8783299
+Saudi Arabia,SAU,Middle East & Africa,2005,9.0,SAR,77.2467551
+Saudi Arabia,SAU,Middle East & Africa,2006,9.0,SAR,78.9531493
+Saudi Arabia,SAU,Middle East & Africa,2007,9.0,SAR,82.2437794
+Saudi Arabia,SAU,Middle East & Africa,2008,10.0,SAR,90.3614439
+Saudi Arabia,SAU,Middle East & Africa,2009,11.0,SAR,94.9312232
+Saudi Arabia,SAU,Middle East & Africa,2010,10.0,SAR,100
+Saudi Arabia,SAU,Middle East & Africa,2011,10.0,SAR,105.826216
+Saudi Arabia,SAU,Middle East & Africa,2012,10.0,SAR,108.859483
+Saudi Arabia,SAU,Middle East & Africa,2013,10.5,SAR,112.257865
+Saudi Arabia,SAU,Middle East & Africa,2014,11.0,SAR,114.318019
+Saudi Arabia,SAU,Middle East & Africa,2015,11.5,SAR,115.671488
+Saudi Arabia,SAU,Middle East & Africa,2016,12.0,SAR,119.045135
+Saudi Arabia,SAU,Middle East & Africa,2017,12.0,SAR,118.021839
+Saudi Arabia,SAU,Middle East & Africa,2018,12.0,SAR,120.940884
+Saudi Arabia,SAU,Middle East & Africa,2019,12.5,SAR,118.477697
+Saudi Arabia,SAU,Middle East & Africa,2020,13.5,SAR,122.25331
+Saudi Arabia,SAU,Middle East & Africa,2021,14.0,SAR,126.079784
+Saudi Arabia,SAU,Middle East & Africa,2022,16.0,SAR,129.287461
+Saudi Arabia,SAU,Middle East & Africa,2023,19.0,SAR,132.485919
+Saudi Arabia,SAU,Middle East & Africa,2024,19.0,SAR,134.474513
+Saudi Arabia,SAU,Middle East & Africa,2025,19.0,SAR,137.211876
+Singapore,SGP,Asia-Pacific,2000,3.2,SGD,85.1887072
+Singapore,SGP,Asia-Pacific,2001,3.3,SGD,86.0382072
+Singapore,SGP,Asia-Pacific,2002,3.3,SGD,85.7012155
+Singapore,SGP,Asia-Pacific,2003,3.3,SGD,86.1364965
+Singapore,SGP,Asia-Pacific,2004,3.3,SGD,87.5687114
+Singapore,SGP,Asia-Pacific,2005,3.6,SGD,87.9409715
+Singapore,SGP,Asia-Pacific,2006,3.6,SGD,88.7901801
+Singapore,SGP,Asia-Pacific,2007,3.775,SGD,90.6634768
+Singapore,SGP,Asia-Pacific,2008,3.95,SGD,96.679398
+Singapore,SGP,Asia-Pacific,2009,4.22,SGD,97.2489769
+Singapore,SGP,Asia-Pacific,2010,4.34,SGD,100
+Singapore,SGP,Asia-Pacific,2011,4.41,SGD,105.251156
+Singapore,SGP,Asia-Pacific,2012,4.625,SGD,110.072548
+Singapore,SGP,Asia-Pacific,2013,4.6,SGD,112.675101
+Singapore,SGP,Asia-Pacific,2014,4.65,SGD,113.839226
+Singapore,SGP,Asia-Pacific,2015,4.7,SGD,113.245013
+Singapore,SGP,Asia-Pacific,2016,5.075,SGD,112.64503
+Singapore,SGP,Asia-Pacific,2017,5.6,SGD,113.294725
+Singapore,SGP,Asia-Pacific,2018,5.8,SGD,113.791845
+Singapore,SGP,Asia-Pacific,2019,5.8,SGD,114.437989
+Singapore,SGP,Asia-Pacific,2020,5.9,SGD,114.241027
+Singapore,SGP,Asia-Pacific,2021,5.9,SGD,116.886967
+Singapore,SGP,Asia-Pacific,2022,5.9,SGD,124.053254
+Singapore,SGP,Asia-Pacific,2023,6.175,SGD,130.049645
+Singapore,SGP,Asia-Pacific,2024,6.65,SGD,133.157196
+Singapore,SGP,Asia-Pacific,2025,6.95,SGD,134.359604
+South Africa,ZAF,Middle East & Africa,2000,9.0,ZAR,59.9904779
+South Africa,ZAF,Middle East & Africa,2001,9.7,ZAR,63.4110719
+South Africa,ZAF,Middle East & Africa,2002,9.7,ZAR,69.4317716
+South Africa,ZAF,Middle East & Africa,2003,13.95,ZAR,73.3750964
+South Africa,ZAF,Middle East & Africa,2004,12.4,ZAR,72.8673118
+South Africa,ZAF,Middle East & Africa,2005,13.95,ZAR,74.3704574
+South Africa,ZAF,Middle East & Africa,2006,13.95,ZAR,76.7829664
+South Africa,ZAF,Middle East & Africa,2007,15.5,ZAR,81.5264738
+South Africa,ZAF,Middle East & Africa,2008,16.95,ZAR,89.6057348
+South Africa,ZAF,Middle East & Africa,2009,17.95,ZAR,96.0914832
+South Africa,ZAF,Middle East & Africa,2010,18.2,ZAR,100
+South Africa,ZAF,Middle East & Africa,2011,19.45,ZAR,105.000853
+South Africa,ZAF,Middle East & Africa,2012,19.95,ZAR,111.025772
+South Africa,ZAF,Middle East & Africa,2013,21.7,ZAR,117.44325
+South Africa,ZAF,Middle East & Africa,2014,24.0,ZAR,124.645844
+South Africa,ZAF,Middle East & Africa,2015,25.75,ZAR,130.278204
+South Africa,ZAF,Middle East & Africa,2016,29.0,ZAR,138.880355
+South Africa,ZAF,Middle East & Africa,2017,28.16,ZAR,146.082949
+South Africa,ZAF,Middle East & Africa,2018,30.5,ZAR,152.671104
+South Africa,ZAF,Middle East & Africa,2019,31.0,ZAR,158.934972
+South Africa,ZAF,Middle East & Africa,2020,31.0,ZAR,164.072367
+South Africa,ZAF,Middle East & Africa,2021,33.5,ZAR,171.650452
+South Africa,ZAF,Middle East & Africa,2022,39.9,ZAR,183.734426
+South Africa,ZAF,Middle East & Africa,2023,49.9,ZAR,194.89674
+South Africa,ZAF,Middle East & Africa,2024,51.9,ZAR,203.396484
+South Africa,ZAF,Middle East & Africa,2025,52.9,ZAR,209.916368
+South Korea,KOR,Asia-Pacific,2000,3000.0,KRW,73.1145656
+South Korea,KOR,Asia-Pacific,2001,3000.0,KRW,76.0878249
+South Korea,KOR,Asia-Pacific,2002,3100.0,KRW,78.18957
+South Korea,KOR,Asia-Pacific,2003,3300.0,KRW,80.9378353
+South Korea,KOR,Asia-Pacific,2004,3200.0,KRW,83.8440402
+South Korea,KOR,Asia-Pacific,2005,2500.0,KRW,86.1529303
+South Korea,KOR,Asia-Pacific,2006,2500.0,KRW,88.0847722
+South Korea,KOR,Asia-Pacific,2007,2900.0,KRW,90.3173458
+South Korea,KOR,Asia-Pacific,2008,3200.0,KRW,94.5386851
+South Korea,KOR,Asia-Pacific,2009,3400.0,KRW,97.1446407
+South Korea,KOR,Asia-Pacific,2010,3400.0,KRW,100
+South Korea,KOR,Asia-Pacific,2011,3700.0,KRW,104.025965
+South Korea,KOR,Asia-Pacific,2012,3700.0,KRW,106.301087
+South Korea,KOR,Asia-Pacific,2013,3800.0,KRW,107.684433
+South Korea,KOR,Asia-Pacific,2014,3900.0,KRW,109.057167
+South Korea,KOR,Asia-Pacific,2015,4200.0,KRW,109.827472
+South Korea,KOR,Asia-Pacific,2016,4350.0,KRW,110.89465
+South Korea,KOR,Asia-Pacific,2017,4400.0,KRW,113.050811
+South Korea,KOR,Asia-Pacific,2018,4450.0,KRW,114.719259
+South Korea,KOR,Asia-Pacific,2019,4500.0,KRW,115.158634
+South Korea,KOR,Asia-Pacific,2020,4500.0,KRW,115.777368
+South Korea,KOR,Asia-Pacific,2021,4550.0,KRW,118.669872
+South Korea,KOR,Asia-Pacific,2022,4600.0,KRW,124.709592
+South Korea,KOR,Asia-Pacific,2023,5050.0,KRW,129.195965
+South Korea,KOR,Asia-Pacific,2024,5500.0,KRW,132.195563
+South Korea,KOR,Asia-Pacific,2025,5500.0,KRW,135.0022
+Sweden,SWE,Europe,2000,24.0,SEK,86.2297783
+Sweden,SWE,Europe,2001,24.0,SEK,88.3065561
+Sweden,SWE,Europe,2002,26.0,SEK,90.2111946
+Sweden,SWE,Europe,2003,30.0,SEK,91.9427683
+Sweden,SWE,Europe,2004,30.0,SEK,92.287047
+Sweden,SWE,Europe,2005,31.0,SEK,92.7044386
+Sweden,SWE,Europe,2006,33.0,SEK,93.9658683
+Sweden,SWE,Europe,2007,32.5,SEK,96.0426461
+Sweden,SWE,Europe,2008,38.0,SEK,99.3456854
+Sweden,SWE,Europe,2009,39.0,SEK,98.8533299
+Sweden,SWE,Europe,2010,43.7,SEK,100
+Sweden,SWE,Europe,2011,48.4,SEK,102.959686
+Sweden,SWE,Europe,2012,40.4865,SEK,103.874986
+Sweden,SWE,Europe,2013,41.0847,SEK,103.826861
+Sweden,SWE,Europe,2014,40.7,SEK,103.641765
+Sweden,SWE,Europe,2015,42.2,SEK,103.59364
+Sweden,SWE,Europe,2016,44.97,SEK,104.610743
+Sweden,SWE,Europe,2017,48.485,SEK,106.49317
+Sweden,SWE,Europe,2018,50.05,SEK,108.569948
+Sweden,SWE,Europe,2019,51.5,SEK,110.506978
+Sweden,SWE,Europe,2020,52.05,SEK,111.057639
+Sweden,SWE,Europe,2021,53.44,SEK,113.461111
+Sweden,SWE,Europe,2022,55.5,SEK,122.956539
+Sweden,SWE,Europe,2023,58.835,SEK,133.465369
+Sweden,SWE,Europe,2024,60.645,SEK,137.251509
+Sweden,SWE,Europe,2025,66.5,SEK,138.183467
+Switzerland,CHE,Europe,2000,5.9,CHF,91.7494743
+Switzerland,CHE,Europe,2001,6.3,CHF,92.6568953
+Switzerland,CHE,Europe,2002,6.3,CHF,93.2524118
+Switzerland,CHE,Europe,2003,6.3,CHF,93.8476167
+Switzerland,CHE,Europe,2004,6.3,CHF,94.6011274
+Switzerland,CHE,Europe,2005,6.3,CHF,95.7098093
+Switzerland,CHE,Europe,2006,6.3,CHF,96.7238636
+Switzerland,CHE,Europe,2007,6.3,CHF,97.4322214
+Switzerland,CHE,Europe,2008,6.5,CHF,99.7959672
+Switzerland,CHE,Europe,2009,6.5,CHF,99.3164656
+Switzerland,CHE,Europe,2010,6.5,CHF,100
+Switzerland,CHE,Europe,2011,6.5,CHF,100.231349
+Switzerland,CHE,Europe,2012,6.5,CHF,99.537195
+Switzerland,CHE,Europe,2013,6.5,CHF,99.3208776
+Switzerland,CHE,Europe,2014,6.33,CHF,99.3077647
+Switzerland,CHE,Europe,2015,6.5,CHF,98.1717746
+Switzerland,CHE,Europe,2016,6.5,CHF,97.7451017
+Switzerland,CHE,Europe,2017,6.5,CHF,98.2668532
+Switzerland,CHE,Europe,2018,6.5,CHF,99.1869606
+Switzerland,CHE,Europe,2019,6.5,CHF,99.5468964
+Switzerland,CHE,Europe,2020,6.5,CHF,98.8243104
+Switzerland,CHE,Europe,2021,6.5,CHF,99.3992842
+Switzerland,CHE,Europe,2022,6.5,CHF,102.217282
+Switzerland,CHE,Europe,2023,6.7,CHF,104.400031
+Switzerland,CHE,Europe,2024,7.1,CHF,105.509114
+Switzerland,CHE,Europe,2025,7.2,CHF,105.671996
+Thailand,THA,Asia-Pacific,2000,55.0,THB,77.3524002
+Thailand,THA,Asia-Pacific,2001,55.0,THB,78.6108533
+Thailand,THA,Asia-Pacific,2002,55.0,THB,79.1590138
+Thailand,THA,Asia-Pacific,2003,59.0,THB,80.5873195
+Thailand,THA,Asia-Pacific,2004,59.0,THB,82.8108439
+Thailand,THA,Asia-Pacific,2005,60.0,THB,86.5707619
+Thailand,THA,Asia-Pacific,2006,60.0,THB,90.5854588
+Thailand,THA,Asia-Pacific,2007,62.0,THB,92.615969
+Thailand,THA,Asia-Pacific,2008,62.0,THB,97.6806635
+Thailand,THA,Asia-Pacific,2009,64.49,THB,96.8545624
+Thailand,THA,Asia-Pacific,2010,70.0,THB,100
+Thailand,THA,Asia-Pacific,2011,70.0,THB,103.811917
+Thailand,THA,Asia-Pacific,2012,80.0,THB,106.936122
+Thailand,THA,Asia-Pacific,2013,88.0,THB,109.273935
+Thailand,THA,Asia-Pacific,2014,97.5,THB,111.344192
+Thailand,THA,Asia-Pacific,2015,103.5,THB,110.344161
+Thailand,THA,Asia-Pacific,2016,115.5,THB,110.549661
+Thailand,THA,Asia-Pacific,2017,119.0,THB,111.284169
+Thailand,THA,Asia-Pacific,2018,119.0,THB,112.471388
+Thailand,THA,Asia-Pacific,2019,119.0,THB,113.264901
+Thailand,THA,Asia-Pacific,2020,121.5,THB,112.306581
+Thailand,THA,Asia-Pacific,2021,128.0,THB,113.689126
+Thailand,THA,Asia-Pacific,2022,128.0,THB,120.596763
+Thailand,THA,Asia-Pacific,2023,128.0,THB,122.079005
+Thailand,THA,Asia-Pacific,2024,135.0,THB,122.565287
+Thailand,THA,Asia-Pacific,2025,135.0,THB,122.401498
+Turkey,TUR,Middle East & Africa,2002,4.0,TRY,46.0945638
+Turkey,TUR,Middle East & Africa,2003,3.75,TRY,56.0521085
+Turkey,TUR,Middle East & Africa,2004,3.95,TRY,60.8716169
+Turkey,TUR,Middle East & Africa,2005,4.0,TRY,65.8528873
+Turkey,TUR,Middle East & Africa,2006,4.15,TRY,72.1730172
+Turkey,TUR,Middle East & Africa,2007,4.65,TRY,78.4926208
+Turkey,TUR,Middle East & Africa,2008,5.15,TRY,86.6904902
+Turkey,TUR,Middle East & Africa,2009,5.65,TRY,92.1094948
+Turkey,TUR,Middle East & Africa,2010,5.8,TRY,100
+Turkey,TUR,Middle East & Africa,2011,6.5,TRY,106.471882
+Turkey,TUR,Middle East & Africa,2012,7.425,TRY,115.938903
+Turkey,TUR,Middle East & Africa,2013,8.475,TRY,124.626309
+Turkey,TUR,Middle East & Africa,2014,8.875,TRY,135.661435
+Turkey,TUR,Middle East & Africa,2015,9.75,TRY,146.067827
+Turkey,TUR,Middle East & Africa,2016,10.5,TRY,157.424796
+Turkey,TUR,Middle East & Africa,2017,10.75,TRY,174.968701
+Turkey,TUR,Middle East & Africa,2018,10.75,TRY,203.545426
+Turkey,TUR,Middle East & Africa,2019,12.37,TRY,234.437127
+Turkey,TUR,Middle East & Africa,2020,13.49,TRY,263.223568
+Turkey,TUR,Middle East & Africa,2021,17.49,TRY,314.806155
+Turkey,TUR,Middle East & Africa,2022,35.995,TRY,542.438803
+Turkey,TUR,Middle East & Africa,2023,85.0,TRY,834.593134
+Turkey,TUR,Middle East & Africa,2024,137.5,TRY,1322.88394
+Turkey,TUR,Middle East & Africa,2025,207.5,TRY,1784.32134
+Ukraine,UKR,Europe,2004,7.25,UAH,45.0842627
+Ukraine,UKR,Europe,2005,7.25,UAH,51.2020062
+Ukraine,UKR,Europe,2006,8.5,UAH,55.8370806
+Ukraine,UKR,Europe,2007,9.125,UAH,63.0058803
+Ukraine,UKR,Europe,2008,11.0,UAH,78.9000346
+Ukraine,UKR,Europe,2009,14.0,UAH,91.4303009
+Ukraine,UKR,Europe,2010,14.25,UAH,100
+Ukraine,UKR,Europe,2011,16.5,UAH,107.955725
+Ukraine,UKR,Europe,2012,16.0,UAH,108.569699
+Ukraine,UKR,Europe,2013,19.0,UAH,108.310273
+Ukraine,UKR,Europe,2014,19.0,UAH,121.385334
+Ukraine,UKR,Europe,2015,26.5,UAH,180.499827
+Ukraine,UKR,Europe,2016,37.5,UAH,205.612245
+Ukraine,UKR,Europe,2017,43.0,UAH,235.299204
+Ukraine,UKR,Europe,2018,48.5,UAH,261.068834
+Ukraine,UKR,Europe,2019,55.5,UAH,281.658596
+Ukraine,UKR,Europe,2020,58.0,UAH,289.354895
+Ukraine,UKR,Europe,2021,63.5,UAH,316.447596
+Ukraine,UKR,Europe,2022,69.0,UAH,380.318229
+Ukraine,UKR,Europe,2023,98.5,UAH,429.185403
+Ukraine,UKR,Europe,2024,114.0,UAH,457.090972
+Ukraine,UKR,Europe,2025,126.0,UAH,515.28018
+United States,USA,Americas,2000,2.24,USD,78.9707208
+United States,USA,Americas,2001,2.24,USD,81.2025685
+United States,USA,Americas,2002,2.35,USD,82.4904669
+United States,USA,Americas,2003,2.46,USD,84.3630788
+United States,USA,Americas,2004,2.47,USD,86.6216781
+United States,USA,Americas,2005,2.58,USD,89.5605324
+United States,USA,Americas,2006,2.725,USD,92.4497051
+United States,USA,Americas,2007,2.945,USD,95.0869924
+United States,USA,Americas,2008,3.21,USD,98.7374774
+United States,USA,Americas,2009,3.43,USD,98.38642
+United States,USA,Americas,2010,3.48,USD,100
+United States,USA,Americas,2011,3.64,USD,103.156842
+United States,USA,Americas,2012,3.885,USD,105.291505
+United States,USA,Americas,2013,4.105,USD,106.833849
+United States,USA,Americas,2014,4.265,USD,108.566932
+United States,USA,Americas,2015,4.29,USD,108.695722
+United States,USA,Americas,2016,4.395,USD,110.067009
+United States,USA,Americas,2017,4.5,USD,112.411557
+United States,USA,Americas,2018,4.615,USD,115.157303
+United States,USA,Americas,2019,4.71,USD,117.244195
+United States,USA,Americas,2020,4.82,USD,118.690502
+United States,USA,Americas,2021,4.91,USD,124.266414
+United States,USA,Americas,2022,5.095,USD,134.211206
+United States,USA,Americas,2023,5.47,USD,139.735794
+United States,USA,Americas,2024,5.69,USD,143.857336
+Uruguay,URY,Americas,2004,29.8,UYU,67.3775463
+Uruguay,URY,Americas,2005,44.0,UYU,70.5438041
+Uruguay,URY,Americas,2006,42.28,UYU,75.0569496
+Uruguay,URY,Americas,2007,58.5,UYU,81.147555
+Uruguay,URY,Americas,2008,61.0,UYU,87.5396078
+Uruguay,URY,Americas,2009,61.0,UYU,93.7218464
+Uruguay,URY,Americas,2010,78.0,UYU,100
+Uruguay,URY,Americas,2011,90.0,UYU,108.092832
+Uruguay,URY,Americas,2012,94.5,UYU,116.845936
+Uruguay,URY,Americas,2013,105.0,UYU,126.865633
+Uruguay,URY,Americas,2014,109.0,UYU,138.127944
+Uruguay,URY,Americas,2015,113.0,UYU,150.098484
+Uruguay,URY,Americas,2016,118.0,UYU,164.567098
+Uruguay,URY,Americas,2017,127.5,UYU,174.800034
+Uruguay,URY,Americas,2018,140.0,UYU,188.096258
+Uruguay,URY,Americas,2019,152.0,UYU,202.921983
+Uruguay,URY,Americas,2020,184.0,UYU,222.719877
+Uruguay,URY,Americas,2021,214.5,UYU,239.976021
+Uruguay,URY,Americas,2022,247.0,UYU,261.82435
+Uruguay,URY,Americas,2023,263.5,UYU,277.191092
+Uruguay,URY,Americas,2024,280.0,UYU,290.632486
+Uruguay,URY,Americas,2025,307.0,UYU,304.147848
