@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import ChartPlaceholder from '$lib/components/ChartPlaceholder.svelte';
+	import InflationComparison from '$lib/components/InflationComparison.svelte';
 </script>
 
 <svelte:head>
@@ -293,25 +294,12 @@
 					</p>
 					<div class="section-detail">
 						<span class="detail-rule" aria-hidden="true"></span>
-						<p>The final comparison will show where these measures move together or apart.</p>
-					</div>
-					<div class="control-stack single-control" role="group" aria-label="Inflation chart control placeholder">
-						<div class="control-field">
-							<span class="control-label">Country</span>
-							<span class="select-look">
-								<span>Choose a country</span><b aria-hidden="true">⌄</b>
-							</span>
-						</div>
+						<p>The chart compares Big Mac price changes after accounting for consumer price inflation.</p>
 					</div>
 				</div>
 
 				<div class="chart-region" data-chart-region="inflation-comparison">
-					<ChartPlaceholder
-						ingredient="sauce"
-						overline="INFLATION COMPARISON · CHART SLOT"
-						title="Big Mac price and inflation over time"
-						description="The comparison chart and its data series will be placed here."
-					/>
+					<InflationComparison />
 				</div>
 			</div>
 		</section>
