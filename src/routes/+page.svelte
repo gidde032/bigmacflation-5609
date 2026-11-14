@@ -2,7 +2,6 @@
 	import { base } from '$app/paths';
 	import AffordabilityMap from '$lib/components/AffordabilityMap.svelte';
 	import BumpChart from '$lib/components/BumpChart.svelte';
-	import ChartPlaceholder from '$lib/components/ChartPlaceholder.svelte';
 	import InflationComparison from '$lib/components/InflationComparison.svelte';
 </script>
 
@@ -287,7 +286,7 @@
 						<span class="chapter-word">BOTTOM BUN</span>
 					</p>
 					<h2 id="conclusions-heading">One product. More than one story.</h2>
-					<p>We’ll bring the findings together once the visualizations are complete.</p>
+					<p>Price rankings, purchasing power, and inflation show three different sides of the same burger.</p>
 				</div>
 
 				<div class="takeaway-grid">
@@ -295,26 +294,26 @@
 						<div class="takeaway-inner">
 							<span class="takeaway-icon">01</span>
 							<h3>Price</h3>
-							<p>Findings will be summarized here.</p>
+							<p>In 2026, Switzerland tops the 2004–2026 price rankings at $9.06. Uruguay climbed 36 places from last to second, while South Korea, Taiwan, and Japan fell 16–20 places.</p>
 						</div>
 					</article>
 					<article class="takeaway-card">
 						<div class="takeaway-inner">
 							<span class="takeaway-icon">02</span>
 							<h3>Purchasing power</h3>
-							<p>Findings will be summarized here.</p>
+							<p>One day of GDP per capita bought more Big Macs in 26 of 37 places from 2004 to 2026. China rose from 2.8 to 10.5; Japan fell the most (−31%).</p>
 						</div>
 					</article>
 					<article class="takeaway-card">
 						<div class="takeaway-inner">
 							<span class="takeaway-icon">03</span>
 							<h3>Inflation</h3>
-							<p>Findings will be summarized here.</p>
+							<p>Big Mac prices outpaced general inflation in 29 of 34 countries from 2004 to 2024. After CPI adjustment, the price change was +38.7% in the United States, +117.8% in Uruguay, and −12.8% in Indonesia.</p>
 						</div>
 					</article>
 				</div>
 
-				<p class="closing-note">TAKEAWAY COPY WILL FOLLOW THE VERIFIED RESULTS.</p>
+				<p class="closing-note">SOURCES: THE ECONOMIST BIG MAC INDEX · WORLD BANK CPI · NATURAL EARTH</p>
 			</div>
 		</section>
 	</main>

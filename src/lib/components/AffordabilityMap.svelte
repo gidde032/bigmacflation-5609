@@ -295,7 +295,7 @@
 			<defs>
 				<pattern id="euro-member-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
 					<rect width="7" height="7" fill={neutral} />
-					<path d="M0 0V7" stroke={entityColor(entityFor('', 'Euro area'))} stroke-opacity=".38" stroke-width="2" />
+					<path d="M0 0V7" stroke="#b4ad9f" stroke-opacity=".7" stroke-width="2" />
 				</pattern>
 			</defs>
 			<g class="country-layer">
