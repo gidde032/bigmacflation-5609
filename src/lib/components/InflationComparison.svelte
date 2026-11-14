@@ -247,6 +247,7 @@
 
 		const ticks = [start];
 		for (let year = start + 5; year < end; year += 5) ticks.push(year);
+		if (ticks.length > 1 && end - ticks[ticks.length - 1] < 3) ticks.pop();
 		if (ticks[ticks.length - 1] !== end) ticks.push(end);
 		return ticks;
 	}
@@ -400,7 +401,7 @@
 					<p class="finding">
 						Between {startYear} and {endYear}, Big Mac prices in {selected.country}
 						{#if selected.realChange > 0}
-							rose {number(selected.realChange)}% faster than general prices.
+							rose {number(selected.realChange)}% more than general prices.
 						{:else if selected.realChange < 0}
 							fell {number(Math.abs(selected.realChange))}% relative to general prices.
 						{:else}

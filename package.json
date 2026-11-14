@@ -18,12 +18,15 @@
 		"@sveltejs/kit": "^2.63.0",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
 		"@types/d3": "^7.4.3",
+		"@types/topojson-client": "^3.1.5",
 		"svelte": "^5.56.1",
 		"svelte-check": "^4.6.0",
 		"typescript": "^6.0.3",
 		"vite": "^8.0.16"
 	},
 	"dependencies": {
-		"d3": "^7.9.0"
+		"d3": "^7.9.0",
+		"topojson-client": "^3.1.0",
+		"world-atlas": "^2.0.2"
 	}
 }

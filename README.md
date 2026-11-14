@@ -26,6 +26,8 @@ Responsive CSS contract tests cover layout structure but do not replace a visual
 
 The canonical CSV files, [`bigmac_clean.csv`](bigmac_clean.csv) and [`bigmac_cpi_merged.csv`](bigmac_cpi_merged.csv), live at the repository root, with byte-for-byte browser copies in `static/data/`. The merged file joins local Big Mac prices with the World Bank indicator FP.CPI.TOTL (Consumer price index, 2010 = 100); [`scripts/build_bigmac_cpi_merged.py`](scripts/build_bigmac_cpi_merged.py) rebuilds it from the cleaned Big Mac data and the checked-in CPI snapshot at [`scripts/world_bank_cpi.csv`](scripts/world_bank_cpi.csv). Saudi Arabia's 2004 `local_price` is corrected from 2.4 to 9.0 because 2.4 was the USD price, not the local-currency price.
 
+The affordability map measures how many Big Macs one day of GDP per capita buys (GDP per capita ÷ 365 ÷ local Big Mac price); its country geometry comes from `world-atlas/countries-110m.json`, based on Natural Earth.
+
 ## Adding a chart
 
 Put reusable chart components and helpers under `src/lib`. Add a Svelte component (for example, `src/lib/components/PriceRankings.svelte`), import it into `src/routes/+page.svelte`, and replace the matching labeled placeholder with the component. Put browser-served assets or data under `static` and reference them using SvelteKit's `base` path when building URLs.

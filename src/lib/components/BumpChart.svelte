@@ -398,9 +398,8 @@
 			places, while South Korea (20 places), Taiwan (17), and Japan (16) fell the most.
 		</p>
 		<p>
-			Ranked by US-dollar price (local price ÷ exchange rate); 1 is the most expensive. Click a line
-			or its name to highlight it. A dot at a line's end marks its last available year when data stop
-			before 2026.
+			Ranked by US-dollar price (local price ÷ exchange rate); 1 is the most expensive. A dot at a
+			line's end marks its last available year when data stop before 2026.
 		</p>
 		<p class="bump-instructions">
 			Hover a line to see that year’s rank and price; click a line or name to highlight it (up to 8);
