@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import AffordabilityMap from '$lib/components/AffordabilityMap.svelte';
 	import BumpChart from '$lib/components/BumpChart.svelte';
 	import ChartPlaceholder from '$lib/components/ChartPlaceholder.svelte';
 	import InflationComparison from '$lib/components/InflationComparison.svelte';
@@ -233,22 +234,16 @@
 					</p>
 					<h2 id="affordability-map-heading">A price means more in some places than others.</h2>
 					<p class="section-deck">
-						Put the menu price beside a broader view of local purchasing power.
+						Compare how many Big Macs a day of local GDP per capita can buy across countries and years.
 					</p>
 					<div class="section-detail">
 						<span class="detail-rule" aria-hidden="true"></span>
-						<p>The map will add another lens to the price comparison.</p>
+						<p>Green means the measure rose and Big Macs became easier to afford; pink means harder.</p>
 					</div>
 				</div>
 
 				<div class="chart-region" data-chart-region="affordability-map">
-					<ChartPlaceholder
-						ingredient="lettuce"
-						overline="AFFORDABILITY · RESERVED CHART SPACE"
-						title="Explore affordability by location"
-						description="Neutral preview only; the measure and visual scale are still to be defined."
-						preview="map"
-					/>
+					<AffordabilityMap />
 				</div>
 			</div>
 		</section>
