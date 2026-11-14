@@ -30,7 +30,7 @@ The affordability map measures how many Big Macs one day of GDP per capita buys 
 
 ## Adding a chart
 
-Put reusable chart components and helpers under `src/lib`. Add a Svelte component (for example, `src/lib/components/PriceRankings.svelte`), import it into `src/routes/+page.svelte`, and replace the matching labeled placeholder with the component. Put browser-served assets or data under `static` and reference them using SvelteKit's `base` path when building URLs.
+The three charts—`BumpChart`, `AffordabilityMap`, and `InflationComparison`—each have their own `.chart-region` in `src/routes/+page.svelte`. Add new chart components under `src/lib/components` and keep pure logic in `src/lib/*.ts`. Put browser-served assets or data under `static` and reference them using SvelteKit's `base` path when building URLs.
 
 ## GitHub Pages
 

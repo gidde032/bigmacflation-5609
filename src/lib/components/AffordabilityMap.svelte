@@ -120,6 +120,7 @@
 				.translateExtent(mapExtent)
 				.scaleExtent([1, 8])
 				.filter((event) => {
+					if (event.type === 'touchstart') return event.touches.length >= 2;
 					if (event.type === 'wheel') return event.ctrlKey || event.metaKey;
 					return !event.button && !event.ctrlKey && !event.metaKey;
 				})
@@ -399,8 +400,8 @@
 					<rect width={7 / zoomTransform.k} height={7 / zoomTransform.k} fill={neutral} />
 					<path
 						d="M0 0V{7 / zoomTransform.k}"
-						stroke={entityColor(entityFor('', 'Euro area'))}
-						stroke-opacity=".38"
+						stroke="#b4ad9f"
+						stroke-opacity=".7"
 						stroke-width={2 / zoomTransform.k}
 					/>
 				</pattern>
@@ -685,7 +686,7 @@
 		width: 100%;
 		height: auto;
 		overflow: hidden;
-		touch-action: none;
+		touch-action: pan-y;
 	}
 
 	.country-shape {
