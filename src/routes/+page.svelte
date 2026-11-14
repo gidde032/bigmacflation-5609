@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import BumpChart from '$lib/components/BumpChart.svelte';
 	import ChartPlaceholder from '$lib/components/ChartPlaceholder.svelte';
 	import InflationComparison from '$lib/components/InflationComparison.svelte';
 </script>
@@ -29,7 +30,7 @@
 				<a href="#conclusions">Takeaways</a>
 			</nav>
 
-			<a class="nav-cta" href="#price-rankings">
+			<a class="nav-cta" href="https://github.com/theeconomist/big-mac-data">
 				Explore the data <span aria-hidden="true">↗</span>
 			</a>
 		</div>
@@ -59,10 +60,6 @@
 				</div>
 
 				<div class="hero-art">
-					<div class="art-caption">
-						<span>FIVE PAGE SECTIONS · ONE STACK</span>
-						<span class="art-rule" aria-hidden="true"></span>
-					</div>
 					<div class="layer-diagram">
 						<svg
 							class="hero-burger"
@@ -181,7 +178,7 @@
 							</li>
 						</ol>
 					</div>
-					<p class="art-footnote">Five clear layers <i>·</i> quiet ingredient details <i>·</i> charts lead below</p>
+					<p class="art-footnote">One story per layer <i>·</i> Charts start below</p>
 				</div>
 
 				<div class="hero-bottom" aria-hidden="true">
@@ -207,35 +204,16 @@
 					</p>
 					<h2 id="price-rankings-heading">What does a Big Mac cost around the world?</h2>
 					<p class="section-deck">
-						Start with the menu price. Compare the same familiar item across countries.
+						Start with the menu price. Compare the same familiar item across countries and over time.
 					</p>
 					<div class="section-detail">
 						<span class="detail-rule" aria-hidden="true"></span>
-						<p>Rankings give us a first view of how prices differ from place to place.</p>
-					</div>
-					<div class="control-stack" role="group" aria-label="Price chart control placeholders">
-						<div class="control-field">
-							<span class="control-label">Region</span>
-							<span class="select-look">
-								<span>Choose a region</span><b aria-hidden="true">⌄</b>
-							</span>
-						</div>
-						<div class="control-field">
-							<span class="control-label">Year</span>
-							<span class="select-look">
-								<span>Choose a year</span><b aria-hidden="true">⌄</b>
-							</span>
-						</div>
+						<p>Rankings give us an initial view as to how prices differ from country to country.</p>
 					</div>
 				</div>
 
 				<div class="chart-region" data-chart-region="price-rankings">
-					<ChartPlaceholder
-						ingredient="patty"
-						overline="PRICE RANKINGS · CHART SLOT"
-						title="Big Mac price by country"
-						description="The country price ranking will be placed here."
-					/>
+					<BumpChart />
 				</div>
 			</div>
 		</section>
