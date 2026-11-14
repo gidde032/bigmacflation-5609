@@ -27,6 +27,9 @@
 		labelDx: number;
 		labelDy: number;
 		anchor: 'start' | 'end';
+		overviewLabelDx: number;
+		overviewLabelDy: number;
+		overviewAnchor: 'start' | 'end';
 	};
 
 	type TooltipDetails = {
@@ -41,15 +44,46 @@
 
 	const width = 720;
 	const mapHeight = 352;
+	const mapExtent: [[number, number], [number, number]] = [[0, 0], [width, mapHeight]];
 	const neutral = '#e6e3dc';
 	const euroMembers = new Set([
 		'040', '056', '100', '191', '196', '233', '246', '250', '276', '300', '372', '380',
 		'428', '440', '442', '470', '528', '620', '703', '705', '724'
 	]);
 	const markerSpecs = [
-		{ code: '', name: 'Euro area', coordinates: [10, 50.5] as [number, number], labelDx: 9, labelDy: -8, anchor: 'start' as const },
-		{ code: '344', name: 'Hong Kong', coordinates: [114.17, 22.32] as [number, number], labelDx: -9, labelDy: -9, anchor: 'end' as const },
-		{ code: '702', name: 'Singapore', coordinates: [103.82, 1.35] as [number, number], labelDx: 9, labelDy: 13, anchor: 'start' as const }
+		{
+			code: '',
+			name: 'Euro area',
+			coordinates: [10, 50.5] as [number, number],
+			labelDx: 9,
+			labelDy: -8,
+			anchor: 'start' as const,
+			overviewLabelDx: -62,
+			overviewLabelDy: 32,
+			overviewAnchor: 'end' as const
+		},
+		{
+			code: '344',
+			name: 'Hong Kong',
+			coordinates: [114.17, 22.32] as [number, number],
+			labelDx: -9,
+			labelDy: -9,
+			anchor: 'end' as const,
+			overviewLabelDx: 34,
+			overviewLabelDy: 22,
+			overviewAnchor: 'start' as const
+		},
+		{
+			code: '702',
+			name: 'Singapore',
+			coordinates: [103.82, 1.35] as [number, number],
+			labelDx: 9,
+			labelDy: 13,
+			anchor: 'start' as const,
+			overviewLabelDx: -32,
+			overviewLabelDy: 12,
+			overviewAnchor: 'end' as const
+		}
 	];
 	const years = d3.range(2000, 2027);
 	const formatter = d3.format(',.2f');
@@ -74,9 +108,28 @@
 	let startYear = $state(2004);
 	let endYear = $state(2026);
 	let stage = $state<HTMLDivElement>();
+	let svgElement = $state<SVGSVGElement>();
+	let zoomTransform = $state(d3.zoomIdentity);
+	let zoomBehavior: d3.ZoomBehavior<SVGSVGElement, unknown> | undefined;
 	let tip = $state<{ x: number; y: number; flipX: boolean; flipY: boolean; details: TooltipDetails } | null>(null);
 
 	onMount(async () => {
+		if (svgElement) {
+			zoomBehavior = d3.zoom<SVGSVGElement, unknown>()
+				.extent(mapExtent)
+				.translateExtent(mapExtent)
+				.scaleExtent([1, 8])
+				.filter((event) => {
+					if (event.type === 'wheel') return event.ctrlKey || event.metaKey;
+					return !event.button && !event.ctrlKey && !event.metaKey;
+				})
+				.on('zoom', (event) => {
+					zoomTransform = event.transform;
+					hideTip();
+				});
+			d3.select(svgElement).call(zoomBehavior).on('dblclick.zoom', null);
+		}
+
 		try {
 			const typedRows = (await d3.csv(base + '/data/bigmac_clean.csv', d3.autoType)) as unknown as Array<
 				Omit<AffordabilityRow, 'iso_numeric'> & { iso_numeric: string | number | null }
@@ -105,6 +158,41 @@
 			loading = false;
 		}
 	});
+
+	function transitionTo(transform: d3.ZoomTransform) {
+		if (!svgElement || !zoomBehavior) return;
+		const constrained = zoomBehavior.constrain()(transform, mapExtent, mapExtent);
+		d3.select(svgElement)
+			.transition('map-zoom')
+			.duration(450)
+			.call(zoomBehavior.transform, constrained);
+	}
+
+	function focusRegion(coordinates: [number, number], scale: number) {
+		const point = projection(coordinates);
+		if (!point) return;
+		const [x, y] = point;
+		transitionTo(
+			d3.zoomIdentity
+				.translate(width / 2 - x * scale, mapHeight / 2 - y * scale)
+				.scale(scale)
+		);
+	}
+
+	function adjustZoom(factor: number) {
+		const scale = Math.max(1, Math.min(8, zoomTransform.k * factor));
+		const center: [number, number] = [width / 2, mapHeight / 2];
+		const [x, y] = zoomTransform.invert(center);
+		transitionTo(
+			d3.zoomIdentity
+				.translate(center[0] - x * scale, center[1] - y * scale)
+				.scale(scale)
+		);
+	}
+
+	function resetZoom() {
+		transitionTo(d3.zoomIdentity);
+	}
 
 	let validRange = $derived(startYear < endYear);
 	let rowsByCode = $derived(d3.group(rows, (row) => row.iso_numeric));
@@ -283,7 +371,15 @@
 	</div>
 
 	<div class="map-stage" bind:this={stage}>
+		<div class="map-zoom-controls">
+			<button type="button" onclick={() => focusRegion([15, 52], 4.5)}>Europe</button>
+			<button type="button" onclick={() => focusRegion([112, 24], 3.8)}>East Asia</button>
+			<button type="button" onclick={() => adjustZoom(1.5)}>Zoom in</button>
+			<button type="button" onclick={() => adjustZoom(1 / 1.5)}>Zoom out</button>
+			<button type="button" onclick={resetZoom}>Reset</button>
+		</div>
 		<svg
+			bind:this={svgElement}
 			viewBox="0 0 {width} {mapHeight}"
 			class="world-map"
 			aria-labelledby="affordability-map-title affordability-map-description"
@@ -293,55 +389,83 @@
 				Countries are colored by the change in Big Macs that a day of local GDP per capita can buy. Green means easier to afford; pink means harder. Grey marks missing data. Focus or hover a country for details.
 			</desc>
 			<defs>
-				<pattern id="euro-member-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-					<rect width="7" height="7" fill={neutral} />
-					<path d="M0 0V7" stroke={entityColor(entityFor('', 'Euro area'))} stroke-opacity=".38" stroke-width="2" />
+				<pattern
+					id="euro-member-hatch"
+					width={7 / zoomTransform.k}
+					height={7 / zoomTransform.k}
+					patternUnits="userSpaceOnUse"
+					patternTransform="rotate(45)"
+				>
+					<rect width={7 / zoomTransform.k} height={7 / zoomTransform.k} fill={neutral} />
+					<path
+						d="M0 0V{7 / zoomTransform.k}"
+						stroke={entityColor(entityFor('', 'Euro area'))}
+						stroke-opacity=".38"
+						stroke-width={2 / zoomTransform.k}
+					/>
 				</pattern>
 			</defs>
-			<g class="country-layer">
-				{#each mapCountries as country (country.code)}
-					{@const focusable = country.hasData || country.isEuroMember}
-					<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
-					<path
-						class="country-shape"
-						data-country={country.name}
-						class:interactive={focusable}
-						d={geoPath(country.feature) ?? ''}
-						fill={country.isEuroMember ? 'url(#euro-member-hatch)' : entityColor(country)}
-						stroke={country.hasData || country.isEuroMember ? '#a9a59b' : '#d3d0c8'}
-						stroke-width={country.hasData || country.isEuroMember ? 0.65 : 0.5}
-						role={focusable ? 'img' : undefined}
-						tabindex={focusable ? 0 : -1}
-						aria-label={country.isEuroMember ? 'Part of the Euro area. See the Euro area marker.' : focusable ? entityLabel(country) : undefined}
-						onpointerenter={focusable ? (event) => (country.isEuroMember ? showMemberTip(event, country.name) : showPointerTip(event, country)) : undefined}
-						onpointermove={focusable ? (event) => (country.isEuroMember ? showMemberTip(event, country.name) : showPointerTip(event, country)) : undefined}
-						onpointerleave={focusable ? hideTip : undefined}
-						onfocus={focusable ? (event) => (country.isEuroMember ? showMemberTip(event, country.name) : showFocusTip(event, country)) : undefined}
-						onblur={focusable ? hideTip : undefined}
-					/>
-				{/each}
-			</g>
-			<g class="marker-layer">
-				{#each markers as marker (marker.code || marker.name)}
-					{@const point = projection(marker.coordinates)}
-					<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
-					<g
-						class="map-marker"
-						class:interactive={true}
-						transform="translate({point?.[0] ?? 0},{point?.[1] ?? 0})"
-						role="img"
-						tabindex="0"
-						aria-label={entityLabel(marker)}
-						onpointerenter={(event) => showPointerTip(event, marker)}
-						onpointermove={(event) => showPointerTip(event, marker)}
-						onpointerleave={hideTip}
-						onfocus={(event) => showFocusTip(event, marker)}
-						onblur={hideTip}
-					>
-						<circle r="6" fill={entityColor(marker)} stroke="#fffdf8" stroke-width="1.5" />
-						<text x={marker.labelDx} y={marker.labelDy} text-anchor={marker.anchor}>{marker.name}</text>
-					</g>
-				{/each}
+			<g class="map-content" transform={zoomTransform.toString()}>
+				<g class="country-layer">
+					{#each mapCountries as country (country.code)}
+						{@const focusable = country.hasData || country.isEuroMember}
+						<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
+						<path
+							class="country-shape"
+							data-country={country.name}
+							class:interactive={focusable}
+							d={geoPath(country.feature) ?? ''}
+							fill={country.isEuroMember ? 'url(#euro-member-hatch)' : entityColor(country)}
+							stroke={country.hasData || country.isEuroMember ? '#a9a59b' : '#d3d0c8'}
+							stroke-width={country.hasData || country.isEuroMember ? 0.65 : 0.5}
+							role={focusable ? 'img' : undefined}
+							tabindex={focusable ? 0 : -1}
+							aria-label={country.isEuroMember ? 'Part of the Euro area. See the Euro area marker.' : focusable ? entityLabel(country) : undefined}
+							onpointerenter={focusable ? (event) => (country.isEuroMember ? showMemberTip(event, country.name) : showPointerTip(event, country)) : undefined}
+							onpointermove={focusable ? (event) => (country.isEuroMember ? showMemberTip(event, country.name) : showPointerTip(event, country)) : undefined}
+							onpointerleave={focusable ? hideTip : undefined}
+							onfocus={focusable ? (event) => (country.isEuroMember ? showMemberTip(event, country.name) : showFocusTip(event, country)) : undefined}
+							onblur={focusable ? hideTip : undefined}
+						/>
+					{/each}
+				</g>
+				<g class="marker-layer">
+					{#each markers as marker (marker.code || marker.name)}
+						{@const point = projection(marker.coordinates)}
+						{@const overview = zoomTransform.k <= 1.001}
+						{@const labelDx = overview ? marker.overviewLabelDx : marker.labelDx}
+						{@const labelDy = overview ? marker.overviewLabelDy : marker.labelDy}
+						{@const labelAnchor = overview ? marker.overviewAnchor : marker.anchor}
+						<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
+						<g
+							class="map-marker"
+							class:interactive={true}
+							transform="translate({point?.[0] ?? 0},{point?.[1] ?? 0})"
+							role="img"
+							tabindex="0"
+							aria-label={entityLabel(marker)}
+							onpointerenter={(event) => showPointerTip(event, marker)}
+							onpointermove={(event) => showPointerTip(event, marker)}
+							onpointerleave={hideTip}
+							onfocus={(event) => showFocusTip(event, marker)}
+							onblur={hideTip}
+						>
+							<g class="marker-detail" transform="scale({1 / zoomTransform.k})">
+								{#if overview}
+									<line
+									class="marker-leader"
+									x1="0"
+									y1="0"
+									x2={marker.overviewLabelDx + (marker.overviewAnchor === 'start' ? -4 : 4)}
+									y2={marker.overviewLabelDy - 3}
+								/>
+								{/if}
+								<circle r="6" fill={entityColor(marker)} stroke="#fffdf8" stroke-width="1.5" />
+								<text x={labelDx} y={labelDy} text-anchor={labelAnchor}>{marker.name}</text>
+							</g>
+						</g>
+					{/each}
+				</g>
 			</g>
 		</svg>
 		{#if tip}
@@ -385,7 +509,7 @@
 
 	<div class="map-foot">
 		<p>Affordability = how many Big Macs one day of GDP per capita buys (GDP per capita ÷ 365 ÷ local Big Mac price). GDP per capita is an average, not a wage.</p>
-		<p>Choose start and end years. Hover or focus a country for details. Grey means no data.</p>
+		<p>Choose start and end years. Hover or focus a country for details. Use Europe or East Asia to zoom, drag to pan, pinch or hold Ctrl/⌘ while scrolling to zoom, and select Reset to return to the world view. Grey means no data.</p>
 		<p class="map-interpretation">
 			In the default 2004 → 2026 view, 26 of 37 places got easier to afford and 11 got harder. China rose from 2.8 to 10.5 Big Macs per day (×3.7). Japan fell the most, from 43.4 to 30.1 (−31%); Britain fell −28% and Mexico −27%. The Euro area changed from 25.0 to 20.0; the United States from 43.7 to 40.0.
 		</p>
@@ -522,11 +646,46 @@
 		border-bottom: 0;
 	}
 
+	.map-zoom-controls {
+		position: absolute;
+		z-index: 3;
+		top: 8px;
+		left: 14px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+		max-width: calc(100% - 28px);
+	}
+
+	.map-zoom-controls button {
+		min-height: 30px;
+		padding: 0.35rem 0.55rem;
+		border: 1px solid #d9d1c2;
+		border-radius: 7px;
+		background: rgb(255 253 248 / 94%);
+		box-shadow: 0 1px 4px rgb(45 35 22 / 12%);
+		color: #392b23;
+		font: inherit;
+		font-size: 0.68rem;
+		font-weight: 700;
+		cursor: pointer;
+	}
+
+	.map-zoom-controls button:hover {
+		background: #f4efe5;
+	}
+
+	.map-zoom-controls button:focus-visible {
+		outline: 3px solid var(--tomato-contrast);
+		outline-offset: 2px;
+	}
+
 	.world-map {
 		display: block;
 		width: 100%;
 		height: auto;
-		overflow: visible;
+		overflow: hidden;
+		touch-action: none;
 	}
 
 	.country-shape {
@@ -542,17 +701,28 @@
 	.map-marker:focus-visible circle {
 		stroke: #392b23;
 		stroke-width: 1.8;
+	}
+
+	.country-shape:focus,
+	.map-marker:focus {
 		outline: none;
+	}
+
+	.marker-leader {
+		stroke: #6d6256;
+		stroke-opacity: 0.65;
+		stroke-width: 0.7;
+		pointer-events: none;
 	}
 
 	.map-marker text {
 		fill: #392b23;
-		font-size: 10px;
-		font-weight: 700;
+		font-size: 8.5px;
+		font-weight: 500;
 		paint-order: stroke;
 		stroke: #fffdf8;
 		stroke-linejoin: round;
-		stroke-width: 3px;
+		stroke-width: 1.5px;
 		pointer-events: none;
 	}
 
