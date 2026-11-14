@@ -294,20 +294,12 @@
 					</p>
 					<div class="section-detail">
 						<span class="detail-rule" aria-hidden="true"></span>
-						<p>The final comparison will show where these measures move together or apart.</p>
-					</div>
-					<div class="control-stack single-control" role="group" aria-label="Inflation chart control placeholder">
-						<div class="control-field">
-							<span class="control-label">Country</span>
-							<span class="select-look">
-								<span>Choose a country</span><b aria-hidden="true">⌄</b>
-							</span>
-						</div>
+						<p>The chart compares Big Mac price changes after accounting for consumer price inflation.</p>
 					</div>
 				</div>
 
 				<div class="chart-region" data-chart-region="inflation-comparison">
-    				<InflationComparison />
+					<InflationComparison />
 				</div>
 			</div>
 		</section>

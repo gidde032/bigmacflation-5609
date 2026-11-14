@@ -24,7 +24,7 @@ Responsive CSS contract tests cover layout structure but do not replace a visual
 
 ## Data
 
-The canonical cleaned data file is [`bigmac_clean.csv`](bigmac_clean.csv) at the repository root. A byte-for-byte copy for browser access is at [`static/data/bigmac_clean.csv`](static/data/bigmac_clean.csv); update this served copy when the source CSV changes. Its production URL is `/bigmacflation-5609/data/bigmac_clean.csv`.
+The canonical CSV files, [`bigmac_clean.csv`](bigmac_clean.csv) and [`bigmac_cpi_merged.csv`](bigmac_cpi_merged.csv), live at the repository root, with byte-for-byte browser copies in `static/data/`. The merged file joins local Big Mac prices with the World Bank indicator FP.CPI.TOTL (Consumer price index, 2010 = 100); [`scripts/build_bigmac_cpi_merged.py`](scripts/build_bigmac_cpi_merged.py) rebuilds it from the cleaned Big Mac data and the checked-in CPI snapshot at [`scripts/world_bank_cpi.csv`](scripts/world_bank_cpi.csv). Saudi Arabia's 2004 `local_price` is corrected from 2.4 to 9.0 because 2.4 was the USD price, not the local-currency price.
 
 ## Adding a chart
 
