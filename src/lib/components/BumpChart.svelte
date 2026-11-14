@@ -11,6 +11,8 @@
 	const rowHeight = 19;
 	const minRows = 8;
 	const fullRanks = 38;
+	const chartStartYear = 2004;
+	const chartLastYear = 2026;
 	const greyLine = '#a29d90';
 	const highlightColors = [
 		'#2a78d6',
@@ -29,7 +31,8 @@
 
 	onMount(async () => {
 		try {
-			rows = (await d3.csv(base + '/data/bigmac_clean.csv', d3.autoType)) as unknown as Row[];
+			const data = (await d3.csv(base + '/data/bigmac_clean.csv', d3.autoType)) as unknown as Row[];
+			rows = data.filter((r) => r.date >= chartStartYear && r.date <= chartLastYear);
 		} catch (error) {
 			console.error('Could not load bigmac_clean.csv', error);
 		}
@@ -48,8 +51,7 @@
 	let points = $derived(series.flatMap((s) => s.points));
 
 	let x_scale = $derived.by(() => { 
-		const [firstYear = 2000, lastYear = 2026] = d3.extent(points, (p) => p.year);
-		return d3.scaleLinear([firstYear, lastYear], [0, innerWidth]);
+		return d3.scaleLinear([chartStartYear, chartLastYear], [0, innerWidth]);
 	});
 
 	let maxRank = $derived(d3.max(points, (p) => p.rank) ?? fullRanks);
@@ -61,8 +63,7 @@
 	let y_scale = $derived(d3.scaleLinear([1, Math.max(maxRank, 2)], [0, innerHeight]));
 
 	let years = $derived.by(() => {
-		const [start, end] = x_scale.domain();
-		return d3.range(start, end + 1);
+		return d3.range(chartStartYear, chartLastYear + 1);
 	});
 
 	let line = $derived(
@@ -117,20 +118,37 @@
 
 	let stage = $state<HTMLDivElement>();
 
-	let tip = $state<{ x: number; y: number; name: string; flipX: boolean; flipY: boolean } | null>(null);
+	let tip = $state<{
+		x: number;
+		y: number;
+		name: string;
+		year: number | null;
+		flipX: boolean;
+		flipY: boolean;
+	} | null>(null);
 
 	function showTip(e: PointerEvent, name: string) {
 		if (!stage) return;
 		const [x, y] = d3.pointer(e, stage); 
-		placeTip(x, y, name);
+		placeTip(x, y, name, yearAtPointer(e, name) ?? null);
 	}
 
-	function placeTip(x: number, y: number, name: string) {
+	function yearAtPointer(e: PointerEvent, name: string) {
+		const svg = stage?.querySelector('svg');
+		const s = series.find((d) => d.name === name);
+		if (!svg || !s) return undefined;
+		const [svgX] = d3.pointer(e, svg);
+		const pointerYear = x_scale.invert(svgX - margin.left);
+		return d3.least(s.points, (p) => Math.abs(p.year - pointerYear))?.year;
+	}
+
+	function placeTip(x: number, y: number, name: string, year: number | null = null) {
 		if (!stage) return;
 		tip = {
 			x,
 			y,
 			name,
+			year,
 			flipX: x > stage.clientWidth * 0.55,
 			flipY: y > stage.clientHeight * 0.6
 		};
@@ -174,28 +192,34 @@
 		return `${change > 0 ? 'Up' : 'Down'} ${n} ${n === 1 ? 'place' : 'places'} since ${since}`;
 	}
 
-	function describe(s: Series) {
+	function describe(s: Series, targetYear?: number) {
 		const first = s.points[0];
-		const last = s.points[s.points.length - 1]; 
-		const row = rowIndex.get(s.name)?.get(last.year);
-		if (!row) return null;
+		const last = s.points[s.points.length - 1];
+		const point =
+			targetYear === undefined
+				? last
+				: d3.least(s.points, (p) => Math.abs(p.year - targetYear));
+		const baseline = s.points.find((p) => p.year === chartStartYear) ?? first;
+		const row = point ? rowIndex.get(s.name)?.get(point.year) : undefined;
+		if (!point || !baseline || !last || !row) return null;
 		return {
 			name: s.name,
-			rank: last.rank,
-			total: countByYear.get(last.year) ?? 0,
-			year: last.year,
+			rank: point.rank,
+			total: countByYear.get(point.year) ?? 0,
+			year: point.year,
 			price: row.dollar_price,
-			change: first.rank - last.rank,
-			since: first.year,
+			change: baseline.rank - point.rank,
+			since: chartStartYear,
 			local: row.local_price,
 			currency: row.currency_code,
-			region: row.region
+			region: row.region,
+			noDataAfter: last.year < chartLastYear ? 'No data after ' + last.year : null
 		};
 	}
 
 	let tipInfo = $derived.by(() => {
 		const s = series.find((d) => d.name === hoveredName);
-		return s ? describe(s) : null;
+		return s ? describe(s, tip?.year ?? undefined) : null;
 	});
 
 	let tableRows = $derived(
@@ -206,7 +230,7 @@
 <figure class="bump-frame" aria-labelledby="bump-chart-title">
 	<figcaption class="bump-head">
 		<div class="bump-titles">
-			<p class="bump-overline">PRICE RANKINGS · 2000–2026</p>
+			<p class="bump-overline">PRICE RANKINGS · 2004–2026</p>
 			<h3 id="bump-chart-title">Where each Big Mac ranks, year by year</h3>
 		</div>
 
@@ -280,6 +304,15 @@
 									/>
 								{:else}
 									<path class="line" {d} stroke={greyLine} />
+									{#if last.year < chartLastYear}
+										<circle
+											class="dot"
+											cx={x_scale(last.year)}
+											cy={y_scale(last.rank)}
+											r="3.5"
+											fill={greyLine}
+										/>
+									{/if}
 									{#if first.year > x_scale.domain()[0]}
 										<circle
 											class="dot"
@@ -345,24 +378,37 @@
 					{tipInfo.name}
 				</p>
 				<p class="tip-rank">
-					<strong>Rank {tipInfo.rank} of {tipInfo.total}</strong>
-					· {money(tipInfo.price)} ({tipInfo.year})
+					<strong>Rank {tipInfo.rank} of {tipInfo.total} in {tipInfo.year}</strong>
 				</p>
 				<p>{changeText(tipInfo.change, tipInfo.since)}</p>
+				<p>US$ {localFmt(tipInfo.price)}</p>
 				<p>{localFmt(tipInfo.local)} {tipInfo.currency}</p>
+				{#if tipInfo.noDataAfter}
+					<p>{tipInfo.noDataAfter}</p>
+				{/if}
 				<p class="tip-region">{tipInfo.region}</p>
 			</div>
 		{/if}
 	</div>
 
 	<div class="bump-foot">
+		<p class="bump-interpretation">
+			Norway, Switzerland, and Denmark were the most expensive in 2004, while Uruguay ranked
+			38th. By 2026, Switzerland led at $9.06 and Uruguay followed at $8.85; Uruguay rose 36
+			places, while South Korea (20 places), Taiwan (17), and Japan (16) fell the most.
+		</p>
 		<p>
 			Ranked by US-dollar price (local price ÷ exchange rate); 1 is the most expensive. Click a line
-			or its name to highlight it. A dot marks a country that enters the dataset after 2000.
-			{#if colorFull}
-				All {highlightColors.length} highlight colors are in use. Click a highlighted line to free one.
-			{/if}
+			or its name to highlight it. A dot at a line's end marks its last available year when data stop
+			before 2026.
 		</p>
+		<p class="bump-instructions">
+			Hover a line to see that year’s rank and price; click a line or name to highlight it (up to 8);
+			use Region to filter.
+		</p>
+		{#if colorFull}
+			<p>All {highlightColors.length} highlight colors are in use. Click a highlighted line to free one.</p>
+		{/if}
 	</div>
 
 	<details class="bump-table">
@@ -378,6 +424,7 @@
 						<th scope="col">Rank</th>
 						<th scope="col">Country</th>
 						<th scope="col">Year</th>
+						<th scope="col">Data note</th>
 						<th scope="col">US$ price</th>
 						<th scope="col">Local price</th>
 						<th scope="col">Rank change</th>
@@ -390,6 +437,7 @@
 							<td>{r.rank}</td>
 							<th scope="row">{r.name}</th>
 							<td>{r.year}</td>
+							<td>{r.noDataAfter ?? ''}</td>
 							<td>{money(r.price)}</td>
 							<td>{localFmt(r.local)} {r.currency}</td>
 							<td>{changeText(r.change, r.since)}</td>
